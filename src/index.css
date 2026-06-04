@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 35 30% 96%;
+    --foreground: 25 30% 12%;
+
+    --card: 35 25% 93%;
+    --card-foreground: 25 30% 12%;
+
+    --popover: 35 30% 96%;
+    --popover-foreground: 25 30% 12%;
+
+    --primary: 25 45% 22%;
+    --primary-foreground: 35 30% 96%;
+
+    --secondary: 33 30% 85%;
+    --secondary-foreground: 25 30% 12%;
+
+    --muted: 35 20% 90%;
+    --muted-foreground: 25 15% 45%;
+
+    --accent: 33 36% 75%;
+    --accent-foreground: 25 30% 12%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 33 20% 82%;
+    --input: 33 20% 82%;
+    --ring: 25 45% 22%;
+
+    --radius: 0.375rem;
+
+    --sand: 38 35% 78%;
+    --sand-foreground: 25 30% 12%;
+    --warm: 28 60% 35%;
+    --warm-foreground: 35 30% 96%;
+    --cream: 38 40% 92%;
+    --gold: 38 70% 50%;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 25 20% 8%;
+    --foreground: 35 25% 90%;
+    --card: 25 20% 12%;
+    --card-foreground: 35 25% 90%;
+    --popover: 25 20% 8%;
+    --popover-foreground: 35 25% 90%;
+    --primary: 33 30% 85%;
+    --primary-foreground: 25 30% 12%;
+    --secondary: 25 15% 18%;
+    --secondary-foreground: 35 25% 90%;
+    --muted: 25 15% 18%;
+    --muted-foreground: 33 15% 60%;
+    --accent: 30 55% 45%;
+    --accent-foreground: 35 30% 96%;
+    --border: 25 15% 22%;
+    --input: 25 15% 22%;
+    --ring: 33 30% 85%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-body antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}

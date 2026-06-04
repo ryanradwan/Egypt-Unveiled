@@ -1,0 +1,22 @@
+project_id = "ridhwnqndsomixyxdxrb"
+
+[functions.send-reminders]
+verify_jwt = false
+
+[functions.admin-stats]
+verify_jwt = false
+
+[functions.cancel-booking]
+verify_jwt = false
+
+[functions.check-tour-status]
+verify_jwt = false
+
+[functions.admin-actions]
+verify_jwt = false
+
+[functions.cleanup-pending]
+verify_jwt = false
+
+[functions.stripe-webhook]
+verify_jwt = false

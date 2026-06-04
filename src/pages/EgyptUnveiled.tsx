@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import heroEgypt from "@/assets/hero-egypt.jpg";
 import founderRyan from "@/assets/founder-ryan.jpg";
 import operatorMohammed from "@/assets/operator-mohammed.jpg";
@@ -163,6 +163,16 @@ const EgyptUnveiled = () => {
   const [openDay, setOpenDay] = useState<number | null>(null);
   const [activeForm, setActiveForm] = useState<"tourist" | "operator">("tourist");
   const [copied, setCopied] = useState(false);
+
+  useEffect(() => {
+    const sendHeight = () => {
+      window.parent.postMessage({ iframeHeight: document.body.scrollHeight }, "*");
+    };
+    sendHeight();
+    const observer = new ResizeObserver(sendHeight);
+    observer.observe(document.body);
+    return () => observer.disconnect();
+  }, []);
 
   const handleCopyLink = () => {
     navigator.clipboard.writeText(window.location.href);

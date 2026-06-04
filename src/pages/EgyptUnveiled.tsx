@@ -803,7 +803,7 @@ const EgyptUnveiled = () => {
               },
               {
                 quote: "As a solo traveler I was nervous, but the group felt like family by day three. The Valley of the Kings alone was worth every penny. I'm already looking at what tour they run next.",
-                name: "Jordan M.",
+                name: "Michael M.",
                 location: "Toronto, Canada",
               },
             ].map(({ quote, name, location }, i) => (

@@ -595,7 +595,7 @@ const EgyptUnveiled = () => {
               Tour <span className="italic">Pricing</span>
             </h2>
             <p className="text-foreground/55 font-body text-sm leading-relaxed mb-14">
-              All-inclusive per person pricing. International flights not included.<br />Small groups of 6 to 12 guests.
+              All-inclusive per person pricing. International flights not included.<br />Small groups of 6 to 15 guests.
             </p>
           </ScrollReveal>
 
@@ -632,7 +632,7 @@ const EgyptUnveiled = () => {
                   Upon approval, we'll send you a secure payment link.<br />No payment required to apply.
                 </p>
                 <p className="text-[#7b5e43] font-body text-xs tracking-[0.15em] uppercase mb-10">
-                  ⚑ Limited to 12 guests — December 2026 departure
+                  ⚑ Limited to 15 guests — December 2026 departure
                 </p>
                 <a
                   href="#apply"
@@ -1026,7 +1026,7 @@ const EgyptUnveiled = () => {
                         className="w-full border border-border bg-background px-4 py-3 font-body text-sm text-foreground focus:outline-none focus:border-[#7b5e43] transition-colors"
                       >
                         <option value="" disabled>Select group size</option>
-                        {["1 person", "2 people", "3 people", "4 people", "5 people", "6 people", "7 people", "8 people", "9 people", "10 people", "11 people", "12 people"].map((o) => (
+                        {["1 person", "2 people", "3 people", "4 people", "5 people", "6 people", "7 people", "8 people", "9 people", "10 people", "11 people", "12 people", "13 people", "14 people", "15 people"].map((o) => (
                           <option key={o}>{o}</option>
                         ))}
                       </select>

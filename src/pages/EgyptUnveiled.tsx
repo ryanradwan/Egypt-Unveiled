@@ -276,7 +276,7 @@ const EgyptUnveiled = () => {
               {[
                 { number: "9", label: "Days" },
                 { number: "5", label: "Cities" },
-                { number: "6–12", label: "Guests" },
+                { number: "6–15", label: "Guests" },
                 { number: "4★", label: "Hotels" },
                 { number: "Dec '26", label: "Next Departure" },
               ].map(({ number, label }) => (

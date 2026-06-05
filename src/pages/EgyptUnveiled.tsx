@@ -611,13 +611,13 @@ const EgyptUnveiled = () => {
               <div className="py-12 px-10">
                 {/* Original price crossed out */}
                 <p className="text-foreground/35 font-body text-sm line-through mb-1 tracking-wide">
-                  Regular price: $2,812/person
+                  Regular price: $2,566/person
                 </p>
 
                 {/* Founding member price */}
                 <p className="font-heading font-light text-foreground leading-none mb-1">
                   <span className="text-3xl align-top mt-4 inline-block">$</span>
-                  <span className="text-8xl">2,712</span>
+                  <span className="text-8xl">2,466</span>
                 </p>
                 <p className="text-foreground/50 font-body text-xs tracking-[0.2em] uppercase mb-2">
                   Per Person · All Inclusive

@@ -36,6 +36,7 @@ const Admin = () => {
   const [error, setError] = useState("");
   const [stats, setStats] = useState<any>(null);
   const [dateGroups, setDateGroups] = useState<DateGroup[]>([]);
+  const [interestSubmissions, setInterestSubmissions] = useState<any[]>([]);
   const [actionLoading, setActionLoading] = useState<string | null>(null);
 
   const fetchData = async (pw?: string) => {
@@ -48,6 +49,7 @@ const Admin = () => {
     if (!data?.success) throw new Error("Failed to load");
 
     setStats(data.stats);
+    setInterestSubmissions(data.interest_submissions || []);
 
     const groups: Record<string, DateGroup> = {};
 
@@ -171,6 +173,43 @@ const Admin = () => {
           <StatCard icon={TrendingUp} label="Operator (75%)" value={fmt(stats.operator_share_cents)} accent />
           <StatCard icon={DollarSign} label="Owed to Operator" value={fmt(stats.operator_share_cents)} />
         </div>
+
+        {/* Interest Submissions */}
+        <h2 className="text-xl font-heading font-light text-foreground mb-6">Interest Submissions</h2>
+        {interestSubmissions.length === 0 ? (
+          <div className="border border-border p-8 text-center mb-12">
+            <p className="text-muted-foreground font-body">No submissions yet</p>
+          </div>
+        ) : (
+          <div className="border border-border bg-card mb-12 overflow-x-auto">
+            <table className="w-full text-sm font-body">
+              <thead>
+                <tr className="border-b border-border">
+                  <th className="text-left px-5 py-2.5 text-muted-foreground font-medium text-xs uppercase tracking-wider">Name</th>
+                  <th className="text-left px-5 py-2.5 text-muted-foreground font-medium text-xs uppercase tracking-wider">Email</th>
+                  <th className="text-left px-5 py-2.5 text-muted-foreground font-medium text-xs uppercase tracking-wider">Group</th>
+                  <th className="text-left px-5 py-2.5 text-muted-foreground font-medium text-xs uppercase tracking-wider">Experience</th>
+                  <th className="text-left px-5 py-2.5 text-muted-foreground font-medium text-xs uppercase tracking-wider">Date</th>
+                  <th className="text-left px-5 py-2.5 text-muted-foreground font-medium text-xs uppercase tracking-wider">Message</th>
+                  <th className="text-left px-5 py-2.5 text-muted-foreground font-medium text-xs uppercase tracking-wider">Submitted</th>
+                </tr>
+              </thead>
+              <tbody>
+                {interestSubmissions.map((s: any) => (
+                  <tr key={s.id} className="border-b border-border last:border-0 hover:bg-muted/20 transition-colors">
+                    <td className="px-5 py-3 text-foreground font-medium">{s.name}</td>
+                    <td className="px-5 py-3"><a href={`mailto:${s.email}`} className="text-accent hover:underline">{s.email}</a></td>
+                    <td className="px-5 py-3 text-foreground">{s.group_size}</td>
+                    <td className="px-5 py-3 text-foreground text-xs">{s.experience}</td>
+                    <td className="px-5 py-3 text-foreground">{s.preferred_date}</td>
+                    <td className="px-5 py-3 text-muted-foreground text-xs max-w-[200px] truncate">{s.message || "—"}</td>
+                    <td className="px-5 py-3 text-muted-foreground text-xs">{format(new Date(s.created_at), "MMM d, yyyy")}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        )}
 
         {/* Bookings Grouped by Date */}
         <h2 className="text-xl font-heading font-light text-foreground mb-6">Tour Dates</h2>

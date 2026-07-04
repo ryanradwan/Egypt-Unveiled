@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { supabase } from "@/integrations/supabase/client";
 import { useToast } from "@/hooks/use-toast";
 
 const experiences = [
@@ -10,6 +11,7 @@ const experiences = [
 
 const BookingSection = () => {
   const { toast } = useToast();
+  const [submitting, setSubmitting] = useState(false);
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -23,13 +25,28 @@ const BookingSection = () => {
     setFormData((prev) => ({ ...prev, [e.target.name]: e.target.value }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    toast({
-      title: "Reservation Received",
-      description: "Thank you! We'll confirm your booking within 24 hours.",
-    });
-    setFormData({ name: "", email: "", groupSize: "", experience: "", preferredDate: "", message: "" });
+    setSubmitting(true);
+    try {
+      const { error } = await supabase.functions.invoke("submit-interest", {
+        body: formData,
+      });
+      if (error) throw error;
+      toast({
+        title: "Reservation Received",
+        description: "Thank you! We'll confirm your booking within 24 hours.",
+      });
+      setFormData({ name: "", email: "", groupSize: "", experience: "", preferredDate: "", message: "" });
+    } catch {
+      toast({
+        title: "Something went wrong",
+        description: "Please try again or contact us directly.",
+        variant: "destructive",
+      });
+    } finally {
+      setSubmitting(false);
+    }
   };
 
   return (
@@ -150,9 +167,10 @@ const BookingSection = () => {
           <div className="text-center pt-4">
             <button
               type="submit"
-              className="bg-accent text-accent-foreground px-10 py-4 text-sm tracking-[0.15em] uppercase font-body font-medium hover:bg-warm transition-colors duration-300"
+              disabled={submitting}
+            className="bg-accent text-accent-foreground px-10 py-4 text-sm tracking-[0.15em] uppercase font-body font-medium hover:bg-warm transition-colors duration-300 disabled:opacity-60"
             >
-              Reserve & Pay
+              {submitting ? "Sending..." : "Reserve & Pay"}
             </button>
             <p className="text-muted-foreground/60 font-body text-xs mt-4 tracking-wide">
               Spots are limited to 4 guests per experience.

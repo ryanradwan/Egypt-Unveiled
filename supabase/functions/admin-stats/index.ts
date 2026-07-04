@@ -45,6 +45,12 @@ serve(async (req) => {
       .eq("is_active", true)
       .order("tour_date", { ascending: true });
 
+    // Fetch interest form submissions
+    const { data: interestSubmissions } = await supabase
+      .from("interest_submissions")
+      .select("*")
+      .order("created_at", { ascending: false });
+
     const totalBookings = bookings?.length || 0;
     const grossRevenue = (bookings || []).reduce((sum: number, b: any) => sum + b.total_amount, 0);
     const operatorShare = Math.round(grossRevenue * 0.75);
@@ -80,6 +86,7 @@ serve(async (req) => {
           reminder_email_sent: b.reminder_email_sent,
         })),
         tour_dates: tourDates || [],
+        interest_submissions: interestSubmissions || [],
       }),
       { headers: { ...corsHeaders, "Content-Type": "application/json" }, status: 200 }
     );

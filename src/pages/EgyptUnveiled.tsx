@@ -8,6 +8,7 @@ import clientDinner from "@/assets/client-dinner.jpg";
 import clientPyramids from "@/assets/client-pyramids.jpg";
 import clientGarden from "@/assets/client-garden.jpg";
 import clientGroup from "@/assets/client-group.jpg";
+import { supabase } from "@/integrations/supabase/client";
 
 const FORMSPREE_ENDPOINT = "https://formspree.io/f/xjgdveez"; // Replace with your Formspree form ID from formspree.io
 
@@ -188,11 +189,29 @@ const EgyptUnveiled = () => {
     try {
       const form = e.currentTarget;
       const data = new FormData(form);
+
+      // Submit to Formspree
       await fetch(FORMSPREE_ENDPOINT, {
         method: "POST",
         body: data,
         headers: { Accept: "application/json" },
       });
+
+      // Save to Supabase
+      await supabase.functions.invoke("submit-interest", {
+        body: {
+          form_type: data.get("form_type"),
+          name: data.get("name"),
+          email: data.get("email"),
+          phone: data.get("phone"),
+          group_size: data.get("group_size"),
+          company: data.get("company"),
+          number_of_clients: data.get("number_of_clients"),
+          preferred_date: data.get("preferred_dates"),
+          message: data.get("message"),
+        },
+      });
+
       setSubmitted(true);
     } catch {
       // fail silently — user can email directly

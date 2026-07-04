@@ -187,9 +187,10 @@ const Admin = () => {
                 <tr className="border-b border-border">
                   <th className="text-left px-5 py-2.5 text-muted-foreground font-medium text-xs uppercase tracking-wider">Name</th>
                   <th className="text-left px-5 py-2.5 text-muted-foreground font-medium text-xs uppercase tracking-wider">Email</th>
+                  <th className="text-left px-5 py-2.5 text-muted-foreground font-medium text-xs uppercase tracking-wider">Phone</th>
+                  <th className="text-left px-5 py-2.5 text-muted-foreground font-medium text-xs uppercase tracking-wider">Type</th>
                   <th className="text-left px-5 py-2.5 text-muted-foreground font-medium text-xs uppercase tracking-wider">Group</th>
-                  <th className="text-left px-5 py-2.5 text-muted-foreground font-medium text-xs uppercase tracking-wider">Experience</th>
-                  <th className="text-left px-5 py-2.5 text-muted-foreground font-medium text-xs uppercase tracking-wider">Date</th>
+                  <th className="text-left px-5 py-2.5 text-muted-foreground font-medium text-xs uppercase tracking-wider">Dates</th>
                   <th className="text-left px-5 py-2.5 text-muted-foreground font-medium text-xs uppercase tracking-wider">Message</th>
                   <th className="text-left px-5 py-2.5 text-muted-foreground font-medium text-xs uppercase tracking-wider">Submitted</th>
                 </tr>
@@ -199,9 +200,10 @@ const Admin = () => {
                   <tr key={s.id} className="border-b border-border last:border-0 hover:bg-muted/20 transition-colors">
                     <td className="px-5 py-3 text-foreground font-medium">{s.name}</td>
                     <td className="px-5 py-3"><a href={`mailto:${s.email}`} className="text-accent hover:underline">{s.email}</a></td>
-                    <td className="px-5 py-3 text-foreground">{s.group_size}</td>
-                    <td className="px-5 py-3 text-foreground text-xs">{s.experience}</td>
-                    <td className="px-5 py-3 text-foreground">{s.preferred_date}</td>
+                    <td className="px-5 py-3 text-foreground text-xs">{s.phone || "—"}</td>
+                    <td className="px-5 py-3 text-foreground text-xs">{s.form_type || "—"}</td>
+                    <td className="px-5 py-3 text-foreground">{s.group_size || s.number_of_clients || "—"}</td>
+                    <td className="px-5 py-3 text-foreground">{s.preferred_date || "—"}</td>
                     <td className="px-5 py-3 text-muted-foreground text-xs max-w-[200px] truncate">{s.message || "—"}</td>
                     <td className="px-5 py-3 text-muted-foreground text-xs">{format(new Date(s.created_at), "MMM d, yyyy")}</td>
                   </tr>

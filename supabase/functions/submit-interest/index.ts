@@ -17,7 +17,21 @@ serve(async (req) => {
   }
 
   try {
-    const { name, email, groupSize, experience, preferredDate, message } = await req.json();
+    const body = await req.json();
+    const {
+      form_type,
+      name,
+      email,
+      phone,
+      group_size,
+      groupSize,
+      company,
+      number_of_clients,
+      experience,
+      preferred_date,
+      preferredDate,
+      message,
+    } = body;
 
     const supabase = createClient(
       Deno.env.get("SUPABASE_URL") ?? "",
@@ -29,15 +43,20 @@ serve(async (req) => {
       .insert({
         name,
         email,
-        group_size: groupSize,
-        experience,
-        preferred_date: preferredDate,
+        phone: phone || null,
+        form_type: form_type || null,
+        group_size: group_size || groupSize || null,
+        company: company || null,
+        number_of_clients: number_of_clients || null,
+        experience: experience || null,
+        preferred_date: preferred_date || preferredDate || null,
         message: message || null,
       });
 
     if (insertError) throw insertError;
 
     if (RESEND_API_KEY) {
+      const displayGroupSize = group_size || groupSize || number_of_clients || "N/A";
       await fetch("https://api.resend.com/emails", {
         method: "POST",
         headers: {
@@ -47,23 +66,25 @@ serve(async (req) => {
         body: JSON.stringify({
           from: FROM_EMAIL,
           to: [OWNER_EMAIL],
-          subject: `New Interest Submission from ${name} 🇪🇬`,
+          subject: `New Application from ${name} 🇪🇬`,
           html: `
             <div style="font-family: Georgia, serif; max-width: 600px; margin: 0 auto; color: #2d1f0f;">
-              <h1 style="font-size: 24px; font-weight: 300;">New Reservation Request</h1>
+              <h1 style="font-size: 24px; font-weight: 300;">New Application — Egypt Unveiled</h1>
               <p style="background: #f5f0e8; padding: 12px; border-left: 3px solid #c4a35a; margin: 16px 0; font-size: 14px;">
-                Someone just filled out the reservation form on Egypt Unveiled.
+                ${form_type || "Application"} submitted on the Egypt Unveiled website.
               </p>
               <table style="width: 100%; border-collapse: collapse;">
-                <tr><td style="padding: 8px 0; font-weight: bold;">Name:</td><td>${name}</td></tr>
+                <tr><td style="padding: 8px 0; font-weight: bold; width: 140px;">Name:</td><td>${name}</td></tr>
                 <tr><td style="padding: 8px 0; font-weight: bold;">Email:</td><td><a href="mailto:${email}">${email}</a></td></tr>
-                <tr><td style="padding: 8px 0; font-weight: bold;">Group Size:</td><td>${groupSize} guests</td></tr>
-                <tr><td style="padding: 8px 0; font-weight: bold;">Experience:</td><td>${experience}</td></tr>
-                <tr><td style="padding: 8px 0; font-weight: bold;">Preferred Date:</td><td>${preferredDate}</td></tr>
+                ${phone ? `<tr><td style="padding: 8px 0; font-weight: bold;">Phone:</td><td>${phone}</td></tr>` : ""}
+                ${company ? `<tr><td style="padding: 8px 0; font-weight: bold;">Company:</td><td>${company}</td></tr>` : ""}
+                <tr><td style="padding: 8px 0; font-weight: bold;">Group Size:</td><td>${displayGroupSize}</td></tr>
+                ${experience ? `<tr><td style="padding: 8px 0; font-weight: bold;">Experience:</td><td>${experience}</td></tr>` : ""}
+                <tr><td style="padding: 8px 0; font-weight: bold;">Preferred Dates:</td><td>${preferred_date || preferredDate || "Not specified"}</td></tr>
                 <tr><td style="padding: 8px 0; font-weight: bold;">Message:</td><td>${message || "None"}</td></tr>
               </table>
               <p style="margin-top: 24px; font-size: 13px; color: #6b5e4f;">
-                Reply to <a href="mailto:${email}">${email}</a> to follow up within 24 hours.
+                Reply to <a href="mailto:${email}">${email}</a> within 48 hours.
               </p>
               <p>— The Next Stamp</p>
             </div>

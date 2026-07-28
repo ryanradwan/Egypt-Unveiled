@@ -102,11 +102,11 @@ const faqs = [
   },
   {
     q: "What is the cancellation policy?",
-    a: "Cancellation terms are shared with your approval. As a general guideline, cancellations made more than 60 days before departure receive a full refund. Inside 60 days, partial refunds apply depending on how much notice is given. We recommend purchasing travel insurance to protect your investment.",
+    a: "A $500 per-person deposit secures your spot and is non-refundable. Beyond the deposit: cancel 60 or more days before departure and every other payment is refunded in full. Cancel 30-59 days out and you'll receive 50% of the remaining tour price back. Cancel 29 days or fewer before departure and no refund is available, as we've already paid your costs to hotels, guides, and local operators. Full terms are in your Tour Booking Agreement, which you review and sign before any payment.",
   },
   {
     q: "Do I need travel insurance?",
-    a: "We strongly recommend it. Travel insurance protects you against unexpected cancellations, medical emergencies, and lost luggage. We do not include insurance in the tour price — this is something you arrange independently before travel.",
+    a: "Yes — travel insurance is required for every guest, and you arrange it yourself before travel. At minimum your policy must cover emergency medical treatment abroad ($50,000) and emergency medical evacuation and repatriation ($100,000). We'll ask for your insurer, policy number, and 24-hour assistance line at final payment. We also strongly recommend adding trip-cancellation coverage — not required, but it's what protects the money you've put toward the trip.",
   },
   {
     q: "What should I pack and is there a dress code?",
@@ -114,7 +114,7 @@ const faqs = [
   },
   {
     q: "How does the approval process work?",
-    a: "Submit your application — no payment needed. We personally review it and respond within 48 hours. If approved, we'll send you a secure payment link to confirm your spot. It's that simple.",
+    a: "Submit your application — no payment needed. We personally review it and respond within 48 hours. If approved, we'll send you your Tour Booking Agreement and a secure payment link for the $500 deposit. Your spot is confirmed once the agreement is signed and the deposit is received; the balance is due 60 days before departure.",
   },
 ];
 

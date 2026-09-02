@@ -10,7 +10,7 @@ import clientGarden from "@/assets/client-garden.jpg";
 import clientGroup from "@/assets/client-group.jpg";
 import { supabase } from "@/integrations/supabase/client";
 
-const FORMSPREE_ENDPOINT = "https://formspree.io/f/xjgdveez"; // Replace with your Formspree form ID from formspree.io
+const MAKE_WEBHOOK_ENDPOINT = "https://hook.us2.make.com/grz2g1m9heva87nvychekzmmy34wyvtg";
 
 const DARK = "#f3e8da"; // replaces all dark brown section backgrounds
 
@@ -190,8 +190,8 @@ const EgyptUnveiled = () => {
       const form = e.currentTarget;
       const data = new FormData(form);
 
-      // Submit to Formspree
-      await fetch(FORMSPREE_ENDPOINT, {
+      // Send to Make for the automated follow-up email.
+      await fetch(MAKE_WEBHOOK_ENDPOINT, {
         method: "POST",
         body: data,
         headers: { Accept: "application/json" },

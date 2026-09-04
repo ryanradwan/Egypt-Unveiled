@@ -665,7 +665,7 @@ const EgyptUnveiled = () => {
 
           <ScrollReveal delay={0.18}>
             <div className="flex flex-wrap justify-center gap-6 mt-8">
-              {["Licensed & Insured", "Small Group Guaranteed", "48-Hour Response", "Secure Payment"].map((badge) => (
+              {["Small Group — 6 to 15 Guests", "Licensed Egyptologist Guides", "48-Hour Response", "Secure Stripe Payment"].map((badge) => (
                 <div key={badge} className="flex items-center gap-2 font-body text-xs text-foreground/50 tracking-wide">
                   <span className="text-[#7b5e43]">✓</span>
                   {badge}

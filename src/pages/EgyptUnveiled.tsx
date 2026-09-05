@@ -49,25 +49,25 @@ const days = [
     day: 6,
     location: "Luxor",
     image: "https://images.pexels.com/photos/15188082/pexels-photo-15188082.jpeg?auto=compress&cs=tinysrgb&w=800",
-    sites: ["Karnak Temple", "Valley of the Kings", "Temple of Hatshepsut", "Colossi of Memnon"],
+    sites: ["Karnak Temple", "Valley of the Kings", "Temple of Hatshepsut", "Tombs of the Nobles", "Colossi of Memnon"],
   },
   {
     day: 7,
     location: "Luxor → Aswan",
     image: "https://images.pexels.com/photos/18934581/pexels-photo-18934581.jpeg?auto=compress&cs=tinysrgb&w=800",
-    sites: ["Bus Ride to Aswan", "Philae Temple", "Aswan High Dam", "Unfinished Obelisk", "Nubian Museum"],
+    sites: ["Scenic Drive Along the Nile", "Temple of Edfu", "Temple of Kom Ombo", "Arrival in Aswan"],
   },
   {
     day: 8,
     location: "Aswan",
     image: "https://images.pexels.com/photos/20319058/pexels-photo-20319058.jpeg?auto=compress&cs=tinysrgb&w=800",
-    sites: ["Tombs of the Nobles", "Felucca Ride on the Nile", "Nubian Village", "Aswan Souk"],
+    sites: ["Philae Temple", "Aswan High Dam", "Unfinished Obelisk", "Nubian Museum", "Felucca Sail on the Nile", "Nubian Village", "Aswan Souk"],
   },
   {
     day: 9,
     location: "Aswan → Cairo → Home",
     image: "https://images.pexels.com/photos/18934704/pexels-photo-18934704.jpeg?auto=compress&cs=tinysrgb&w=800",
-    sites: ["Return Flight to Cairo", "Departure"],
+    sites: ["Return Flight to Cairo", "Cairo Airport Connection Assistance", "Departure"],
   },
 ];
 
@@ -77,15 +77,17 @@ const included = [
   "All meals — breakfast, lunch & dinner",
   "All entrance fees",
   "Private ground transportation",
-  "Lead tour guide throughout",
-  "Local expert guides at each site",
-  "Nile Dinner Cruise",
+  "Licensed Egyptologist Lead Guide — all 9 days",
+  "Local expert guides at each major site",
+  "Nile Dinner Cruise in Cairo",
+  "Felucca sail on the Nile in Aswan",
   "Airport pickup on arrival",
+  "Cairo airport assistance for your connection home",
 ];
 
 const notIncluded = [
   "International flights",
-  "Egypt visa ($25 USD, paid on arrival)",
+  "Egypt visa (e-Visa or on arrival — depends on your nationality)",
   "Travel insurance",
   "Personal expenses & shopping",
   "Gratuities & tips",
@@ -94,7 +96,7 @@ const notIncluded = [
 const faqs = [
   {
     q: "Is this tour suitable for all fitness levels?",
-    a: "This tour involves moderate walking at historical sites — uneven terrain, stairs, and time on your feet in the heat. A reasonable level of fitness is recommended. If you have specific mobility concerns, reach out before applying and we'll let you know what to expect at each site.",
+    a: "Be honest with yourself on this one. You'll cover roughly 3 to 5 miles across a full day, much of it on sand, gravel and uneven ancient stone. Tombs in the Valley of the Kings are entered down steep ramps and stairs, with low ceilings and no air conditioning. Expect sun exposure, long travel days and a fair amount of standing. None of this demands unusual fitness and guests of many ages and abilities love it — but if any of it gives you pause, tell us before you apply. There is usually a way to adapt something in advance, and we would far rather do that than watch you struggle at Karnak.",
   },
   {
     q: "Can solo travelers join?",
@@ -106,15 +108,19 @@ const faqs = [
   },
   {
     q: "Do I need travel insurance?",
-    a: "Yes — travel insurance is required for every guest, and you arrange it yourself before travel. At minimum your policy must cover emergency medical treatment abroad ($50,000) and emergency medical evacuation and repatriation ($100,000). We'll ask for your insurer, policy number, and 24-hour assistance line at final payment. We also strongly recommend adding trip-cancellation coverage — not required, but it's what protects the money you've put toward the trip.",
+    a: "Yes — travel insurance is required for every guest, and you arrange it yourself before travel. At minimum your policy must cover emergency medical treatment abroad ($50,000) and emergency medical evacuation and repatriation ($100,000). We'll ask for your insurer, policy number, and 24-hour assistance line at final payment. We also strongly recommend adding trip-cancellation coverage — not required, but it's what protects the money you've put toward the trip. One thing to be clear about: if something happens on tour, your medical treatment, hospital admission, emergency transport and replacement documents are your own financial responsibility, met by you, your emergency contact or your insurer. Your Lead Guide will get you to care, stay with you or arrange someone who can, and help you reach your insurer and your emergency contact — but that support is coordination, not payment.",
   },
   {
     q: "What should I pack and is there a dress code?",
     a: "Egypt has a respectful dress code, especially at religious sites like mosques and the Citadel. Shoulders and knees should be covered — light layers work well. Comfortable walking shoes, sunscreen, a hat, and a refillable water bottle are essentials. A full packing guide is sent to approved guests.",
   },
   {
+    q: "What happens if the group doesn't fill?",
+    a: "We confirm or cancel every departure 75 days before it leaves, and we need a minimum of 6 guests to run. That date sits ahead of your final balance, so if a departure doesn't fill, the only money you've paid is your deposit — and we refund it in full, or move it to a future departure if you'd rather. Once we confirm a departure at the 75-day mark it is guaranteed to run, and we will not cancel it afterwards for numbers.",
+  },
+  {
     q: "How does the approval process work?",
-    a: "Submit your application — no payment needed. We personally review it and respond within 48 hours. If approved, we'll send you your Tour Booking Agreement and a secure payment link for the $500 deposit. Your spot is confirmed once the agreement is signed and the deposit is received; the balance is due 60 days before departure.",
+    a: "Submit your application — no payment needed. We personally review it and respond within 48 hours. If approved, we'll send you your Tour Booking Agreement and a secure payment link for the $500 deposit. Your spot is confirmed once the agreement is signed and the deposit is received. From there: we confirm the departure itself 75 days out and ask for your registration form and passport copy, your insurance details and final balance are due at 60 days, your flight details at 45, visa confirmation at 30, and we send your final documents 14 days before you fly.",
   },
 ];
 
@@ -665,7 +671,7 @@ const EgyptUnveiled = () => {
 
           <ScrollReveal delay={0.18}>
             <div className="flex flex-wrap justify-center gap-6 mt-8">
-              {["Small Group — 6 to 15 Guests", "Licensed Egyptologist Guides", "48-Hour Response", "Secure Stripe Payment"].map((badge) => (
+              {["Small Group — 6 to 15 Guests", "Licensed Egyptologist Guides", "48-Hour Response", "Secure WeTravel Checkout"].map((badge) => (
                 <div key={badge} className="flex items-center gap-2 font-body text-xs text-foreground/50 tracking-wide">
                   <span className="text-[#7b5e43]">✓</span>
                   {badge}

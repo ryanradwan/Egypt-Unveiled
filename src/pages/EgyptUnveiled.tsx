@@ -49,7 +49,7 @@ const days = [
     day: 6,
     location: "Luxor",
     image: "https://images.pexels.com/photos/15188082/pexels-photo-15188082.jpeg?auto=compress&cs=tinysrgb&w=800",
-    sites: ["Karnak Temple", "Valley of the Kings", "Temple of Hatshepsut", "Tombs of the Nobles", "Colossi of Memnon"],
+    sites: ["Sunrise Hot Air Balloon Flight", "Karnak Temple", "Valley of the Kings", "Temple of Hatshepsut", "Tombs of the Nobles", "Colossi of Memnon"],
   },
   {
     day: 7,
@@ -67,7 +67,7 @@ const days = [
     day: 9,
     location: "Aswan → Cairo → Home",
     image: "https://images.pexels.com/photos/18934704/pexels-photo-18934704.jpeg?auto=compress&cs=tinysrgb&w=800",
-    sites: ["Return Flight to Cairo", "Cairo Airport Connection Assistance", "Departure"],
+    sites: ["Return Flight to Cairo", "Tour Ends at Cairo Airport"],
   },
 ];
 
@@ -80,9 +80,9 @@ const included = [
   "Licensed Egyptologist Lead Guide — all 9 days",
   "Local expert guides at each major site",
   "Nile Dinner Cruise in Cairo",
+  "Sunrise hot air balloon flight over Luxor",
   "Felucca sail on the Nile in Aswan",
   "Airport pickup on arrival",
-  "Cairo airport assistance for your connection home",
 ];
 
 const notIncluded = [
@@ -100,7 +100,7 @@ const faqs = [
   },
   {
     q: "Can solo travelers join?",
-    a: "Absolutely. Many of our guests travel solo and find the small group format a great way to meet like-minded people. Pricing is per person based on single occupancy, so there's no single supplement to worry about.",
+    a: "Absolutely, and plenty do. There are two rates. The sharing rate is for two travellers booking together into one twin or double room, each naming the other. The private-room rate gives you a room of your own for all eight nights. If you book alone you book the private room — we never place you in a room with someone you haven't named. The private-room rate is the sharing rate plus exactly what that extra hotel room costs us, with nothing added on top. For comparison, single supplements on comparable Egypt tours run 15 to 60 percent.",
   },
   {
     q: "What is the cancellation policy?",
@@ -113,6 +113,10 @@ const faqs = [
   {
     q: "What should I pack and is there a dress code?",
     a: "Egypt has a respectful dress code, especially at religious sites like mosques and the Citadel. Shoulders and knees should be covered — light layers work well. Comfortable walking shoes, sunscreen, a hat, and a refillable water bottle are essentials. A full packing guide is sent to approved guests.",
+  },
+  {
+    q: "What if the person I'm sharing with cancels?",
+    a: "The hotel charges for the room whether one person sleeps in it or two, so the room still has to be paid for. You have two options: nominate a replacement traveller who books the same departure at the sharing rate, or pay the difference between the two published rates — $383.80 — and have the room to yourself. We'll write to you with the amount, and it's payable within 14 days of that notice or by your final payment date, whichever comes first. This is Section 2.5 of your Tour Booking Agreement, and it's worth reading before you book with a companion.",
   },
   {
     q: "What happens if the group doesn't fill?",
@@ -258,7 +262,7 @@ const EgyptUnveiled = () => {
             9 Days &nbsp;·&nbsp; 8 Nights &nbsp;·&nbsp; Cairo to Aswan
           </p>
           <p className="text-white/70 font-body text-xs tracking-[0.3em] uppercase mb-10">
-            Next Departure: December 2026
+            Next Departure: April 2027
           </p>
           <motion.a
             href="#apply"
@@ -303,7 +307,7 @@ const EgyptUnveiled = () => {
                 { number: "5", label: "Cities" },
                 { number: "6–15", label: "Guests" },
                 { number: "4★", label: "Hotels" },
-                { number: "Dec '26", label: "Next Departure" },
+                { number: "Apr '27", label: "Next Departure" },
               ].map(({ number, label }) => (
                 <div key={label} className="text-center">
                   <p className="font-heading text-4xl font-light text-[#7b5e43] mb-1">{number}</p>
@@ -315,14 +319,14 @@ const EgyptUnveiled = () => {
         </div>
       </section>
 
-      {/* ── WHY DECEMBER ─────────────────────────────────────────────────── */}
+      {/* ── WHY APRIL ────────────────────────────────────────────────────── */}
       <section className="py-24 md:py-32 px-6" style={{ backgroundColor: DARK }}>
         <div className="max-w-5xl mx-auto">
           <ScrollReveal>
             <div className="text-center mb-16">
               <p className="text-foreground/50 font-body text-xs tracking-[0.35em] uppercase mb-5">Perfect Timing</p>
               <h2 className="text-3xl md:text-5xl font-heading font-light text-foreground">
-                Why <span className="italic">December?</span>
+                Why <span className="italic">April?</span>
               </h2>
             </div>
           </ScrollReveal>
@@ -330,24 +334,24 @@ const EgyptUnveiled = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
             {[
               {
-                icon: "☀️",
-                title: "Ideal Weather",
-                description: "Temperatures sit in the comfortable 65–75°F range — no summer heat, no crowds braving the desert sun.",
+                icon: "🌤️",
+                title: "Shoulder Season",
+                description: "April sits between Egypt's winter peak and its summer heat — fewer people at every site, and rates below the December high season.",
               },
               {
-                icon: "📸",
-                title: "Golden Light",
-                description: "Winter sun sits lower in the sky, casting dramatic golden light across the pyramids and temples all day.",
+                icon: "🎈",
+                title: "Balloon Weather",
+                description: "Your tour includes a sunrise balloon flight over the Valley of the Kings. April's calm, settled mornings are made for it.",
               },
               {
                 icon: "🏛️",
-                title: "Peak Visibility",
-                description: "Clear, dry skies mean crisp views across the Giza Plateau and brilliant blue backdrops at every site.",
+                title: "Long, Clear Days",
+                description: "More daylight than the winter months and dry, settled skies — full touring days and clean views across the Giza Plateau.",
               },
               {
-                icon: "✨",
-                title: "Festive Atmosphere",
-                description: "Egypt comes alive in December — markets, local celebrations, and a warm festive energy throughout Cairo.",
+                icon: "⛵",
+                title: "Sailing Season",
+                description: "Steady spring breezes on the Nile at Aswan, which is exactly what a felucca needs for an afternoon on the water.",
               },
             ].map(({ icon, title, description }, i) => (
               <ScrollReveal key={title} delay={i * 0.1}>
@@ -620,7 +624,7 @@ const EgyptUnveiled = () => {
               Tour <span className="italic">Pricing</span>
             </h2>
             <p className="text-foreground/55 font-body text-sm leading-relaxed mb-14">
-              All-inclusive per person pricing. International flights not included.<br />Small groups of 6 to 15 guests.
+              All-inclusive per person pricing, in two room types. International flights not included.<br />Small groups of 6 to 15 guests.
             </p>
           </ScrollReveal>
 
@@ -634,30 +638,59 @@ const EgyptUnveiled = () => {
               </div>
 
               <div className="py-12 px-10">
-                {/* Original price crossed out */}
-                <p className="text-foreground/35 font-body text-sm line-through mb-1 tracking-wide">
-                  Regular price: $2,566/person
-                </p>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 sm:gap-8 mb-8 text-center">
+                  {/* Sharing a twin */}
+                  <div>
+                    <p className="text-foreground/50 font-body text-[0.7rem] tracking-[0.2em] uppercase mb-3">
+                      Sharing a Twin
+                    </p>
+                    <p className="text-foreground/35 font-body text-xs line-through mb-1 tracking-wide">
+                      $2,453.63
+                    </p>
+                    <p className="font-heading font-light text-foreground leading-none mb-3">
+                      <span className="text-2xl align-top mt-1 inline-block">$</span>
+                      <span className="text-6xl">2,353</span>
+                      <span className="text-2xl align-top mt-1 inline-block">.63</span>
+                    </p>
+                    <p className="font-body text-xs text-foreground/50 leading-relaxed">
+                      Per person, for two travellers<br />booking together
+                    </p>
+                  </div>
 
-                {/* Founding member price */}
-                <p className="font-heading font-light text-foreground leading-none mb-1">
-                  <span className="text-3xl align-top mt-4 inline-block">$</span>
-                  <span className="text-8xl">2,466</span>
-                </p>
-                <p className="text-foreground/50 font-body text-xs tracking-[0.2em] uppercase mb-2">
-                  Per Person · All Inclusive
-                </p>
+                  {/* Private room */}
+                  <div className="sm:border-l sm:border-foreground/10 sm:pl-8">
+                    <p className="text-foreground/50 font-body text-[0.7rem] tracking-[0.2em] uppercase mb-3">
+                      Private Room
+                    </p>
+                    <p className="text-foreground/35 font-body text-xs line-through mb-1 tracking-wide">
+                      $2,837.43
+                    </p>
+                    <p className="font-heading font-light text-foreground leading-none mb-3">
+                      <span className="text-2xl align-top mt-1 inline-block">$</span>
+                      <span className="text-6xl">2,737</span>
+                      <span className="text-2xl align-top mt-1 inline-block">.43</span>
+                    </p>
+                    <p className="font-body text-xs text-foreground/50 leading-relaxed">
+                      Per person, a room of your<br />own for all 8 nights
+                    </p>
+                  </div>
+                </div>
+
                 <p className="text-[#7b5e43] font-body text-xs font-medium mb-8">
-                  You save $100 per person
+                  Founding member rate — $100 off either room type
                 </p>
 
                 <div className="w-10 h-px bg-[#7b5e43] mx-auto mb-8" />
 
                 <p className="text-foreground/60 font-body text-sm leading-relaxed mb-6">
+                  Travelling alone? You book the private room — we never place you<br className="hidden sm:inline" />
+                  with a stranger. It is priced at what the extra room costs us, nothing on top.
+                </p>
+                <p className="text-foreground/60 font-body text-sm leading-relaxed mb-6">
                   Upon approval, we'll send you a secure payment link.<br />No payment required to apply.
                 </p>
                 <p className="text-[#7b5e43] font-body text-xs tracking-[0.15em] uppercase mb-10">
-                  ⚑ Limited to 15 guests — December 2026 departure
+                  ⚑ Limited to 15 guests — April 2027 departure
                 </p>
                 <a
                   href="#apply"

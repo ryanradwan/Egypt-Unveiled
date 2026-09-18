@@ -900,6 +900,14 @@ const EgyptUnveiled = () => {
                 Facebook
               </a>
               <a
+                href="https://www.instagram.com/thenextstamptravel/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-6 py-3 border border-foreground/20 font-body text-xs tracking-[0.15em] uppercase text-foreground/60 hover:border-[#7b5e43] hover:text-[#7b5e43] transition-colors duration-300"
+              >
+                Instagram
+              </a>
+              <a
                 href="https://www.tiktok.com/@thenextstamp"
                 target="_blank"
                 rel="noopener noreferrer"

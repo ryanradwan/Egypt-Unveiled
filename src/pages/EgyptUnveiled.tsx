@@ -720,6 +720,13 @@ const EgyptUnveiled = () => {
 
                 <div className="w-10 h-px bg-[#7b5e43] mx-auto mb-8" />
 
+                <p className="text-foreground/70 font-body text-sm leading-relaxed mb-2">
+                  Paid in three parts
+                </p>
+                <p className="text-foreground/55 font-body text-xs tracking-[0.05em] leading-relaxed mb-8">
+                  $500 to reserve your place&nbsp;&nbsp;·&nbsp;&nbsp;$1,000 at 90 days&nbsp;&nbsp;·&nbsp;&nbsp;balance at 60 days
+                </p>
+
                 <p className="text-foreground/60 font-body text-sm leading-relaxed mb-6">
                   Travelling alone? You book the private room — we never place you<br className="hidden sm:inline" />
                   with a stranger. It is priced at what the extra room costs us, nothing on top.

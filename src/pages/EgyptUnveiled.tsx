@@ -636,7 +636,7 @@ const EgyptUnveiled = () => {
                 home, and that your guide confirms in writing they have read.
               </p>
               <p>
-                Egypt runs six hours ahead of Connecticut. If something happens while the
+                Egypt runs six to seven hours ahead of Connecticut. If something happens while the
                 US is asleep, a named deputy holds the same authority, along with your
                 insurance details and your emergency contacts. There is always someone awake.
               </p>

@@ -108,7 +108,7 @@ const faqs = [
   },
   {
     q: "What is the cancellation policy?",
-    a: "A $500 per-person deposit secures your spot and is non-refundable — with one exception: cancel within 48 hours of booking and you get everything back, deposit included, provided your departure is still more than 60 days away. After that, cancel 60 or more days before departure and every payment except the deposit is refunded in full. Cancel 30-59 days out and you'll receive 50% of the remaining tour price back. Cancel 29 days or fewer before departure and no refund is available. The charges step up as departure approaches because we confirm your departure at 75 days and begin booking your hotel room and internal Egyptian flights in your name from that point, and we pay our local operator half shortly after balances fall due at 60 days and the rest on the day you arrive. One other option worth knowing: instead of cancelling you can transfer your place to someone else, up to 30 days before departure, for a $100 administrative fee plus any supplier costs we can't recover. Full terms are in your Tour Booking Agreement, which you review and sign before any payment.",
+    a: "A $500 per-person deposit secures your spot and is non-refundable — with one exception: cancel within 48 hours of booking and you get everything back, deposit included, provided your departure is still more than 60 days away. After that it works in four steps. Cancel 75 or more days before departure and everything except the deposit is refunded, including your second payment. Cancel 60 to 74 days out and we retain the deposit plus half the second payment, $1,000 in total, and refund the rest. Cancel 30 to 59 days out and you'll receive 50% of the remaining tour price back. Cancel 29 days or fewer before departure and no refund is available. The charges step up as departure approaches because we confirm your departure at 75 days and begin booking your hotel room and internal Egyptian flights in your name from that point, and we pay our local operator half shortly after balances fall due at 60 days and the rest on the day you arrive. One other option worth knowing: instead of cancelling you can transfer your place to someone else, up to 30 days before departure, for a $100 administrative fee plus any supplier costs we can't recover. Full terms are in your Tour Booking Agreement, which you review and sign before any payment.",
   },
   {
     q: "Do I need travel insurance?",
@@ -124,15 +124,15 @@ const faqs = [
   },
   {
     q: "What if the person I'm sharing with cancels?",
-    a: "The hotel charges for the room whether one person sleeps in it or two, so the room still has to be paid for. You have two options: nominate a replacement traveller who books the same departure at the sharing rate, or pay the difference between the two published rates — $383.80 — and have the room to yourself. We'll write to you with the amount, and it's payable within 14 days of that notice or by your final payment date, whichever comes first. This is Section 2.5 of your Tour Booking Agreement, and it's worth reading before you book with a companion.",
+    a: "The hotel charges for the room whether one person sleeps in it or two, so the room still has to be paid for. You have two options: nominate a replacement traveller who books the same departure at the sharing rate, or pay the difference between the two published rates — $383.81 — and have the room to yourself. We'll write to you with the amount, and it's payable within 14 days of that notice or by your final payment date, whichever comes first. This is Section 2.5 of your Tour Booking Agreement, and it's worth reading before you book with a companion.",
   },
   {
     q: "What happens if the group doesn't fill?",
-    a: "We confirm or cancel every departure 75 days before it leaves, and we need a minimum of 6 guests to run. That date sits ahead of your final balance, so if a departure doesn't fill, the only money you've paid is your deposit — and we refund it in full, or move it to a future departure if you'd rather. Once we confirm a departure at the 75-day mark it is guaranteed to run, and we will not cancel it afterwards for numbers.",
+    a: "We confirm or cancel every departure 75 days before it leaves, and we need a minimum of 6 guests to run. That date sits ahead of your final balance, so if a departure doesn't fill the only money you've paid is your deposit and your $1,000 second payment — and we refund both in full, or move them to a future departure if you'd rather. Once we confirm a departure at the 75-day mark it is guaranteed to run, and we will not cancel it afterwards for numbers.",
   },
   {
     q: "How does the approval process work?",
-    a: "Submit your application — no payment needed. We personally review it and respond within 48 hours. If approved, we'll send you your Tour Booking Agreement and a secure payment link for the $500 deposit. Your spot is confirmed once the agreement is signed and the deposit is received. From there: we confirm the departure itself 75 days out, and your registration form, passport copy and travel insurance details are all due at that point; your final balance at 60 days; your flight details at 45; visa confirmation at 30; and we send your final documents 14 days before you fly.",
+    a: "Submit your application — no payment needed. We personally review it and respond within 48 hours. If approved, we'll send you your Tour Booking Agreement and a secure payment link for the $500 deposit. Your spot is confirmed once the agreement is signed and the deposit is received. Payment comes in three parts: the $500 deposit, a $1,000 second payment 90 days before departure, and the balance at 60 days. Alongside that: we confirm the departure itself 75 days out, and your registration form, passport copy and travel insurance details are all due at that point; your flight details at 45 days; visa confirmation at 30; and we send your final documents 14 days before you fly.",
   },
 ];
 
@@ -683,12 +683,12 @@ const EgyptUnveiled = () => {
                       Sharing a Twin
                     </p>
                     <p className="text-foreground/35 font-body text-xs line-through mb-1 tracking-wide">
-                      $2,453.63
+                      $2,460.00
                     </p>
                     <p className="font-heading font-light text-foreground leading-none mb-3">
                       <span className="text-2xl align-top mt-1 inline-block">$</span>
-                      <span className="text-6xl">2,353</span>
-                      <span className="text-2xl align-top mt-1 inline-block">.63</span>
+                      <span className="text-6xl">2,360</span>
+                      <span className="text-2xl align-top mt-1 inline-block">.00</span>
                     </p>
                     <p className="font-body text-xs text-foreground/50 leading-relaxed">
                       Per person, for two travellers<br />booking together
@@ -701,12 +701,12 @@ const EgyptUnveiled = () => {
                       Private Room
                     </p>
                     <p className="text-foreground/35 font-body text-xs line-through mb-1 tracking-wide">
-                      $2,837.43
+                      $2,843.81
                     </p>
                     <p className="font-heading font-light text-foreground leading-none mb-3">
                       <span className="text-2xl align-top mt-1 inline-block">$</span>
-                      <span className="text-6xl">2,737</span>
-                      <span className="text-2xl align-top mt-1 inline-block">.43</span>
+                      <span className="text-6xl">2,743</span>
+                      <span className="text-2xl align-top mt-1 inline-block">.81</span>
                     </p>
                     <p className="font-body text-xs text-foreground/50 leading-relaxed">
                       Per person, a room of your<br />own for all 8 nights

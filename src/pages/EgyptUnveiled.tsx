@@ -49,7 +49,7 @@ const days = [
     day: 6,
     location: "Luxor",
     image: "https://images.pexels.com/photos/15188082/pexels-photo-15188082.jpeg?auto=compress&cs=tinysrgb&w=800",
-    sites: ["Sunrise Hot Air Balloon Flight", "Karnak Temple", "Valley of the Kings", "Temple of Hatshepsut", "Tombs of the Nobles", "Colossi of Memnon"],
+    sites: ["Sunrise Hot Air Balloon Flight (weather permitting)", "Karnak Temple", "Valley of the Kings", "Temple of Hatshepsut", "Tombs of the Nobles", "Colossi of Memnon"],
   },
   {
     day: 7,
@@ -78,11 +78,11 @@ const included = [
   "All entrance fees",
   "Private ground transportation",
   "Licensed Egyptologist Lead Guide — all 9 days",
-  "Local expert guides at each major site",
+  "Specialist guides at the Valley of the Kings, Karnak, Philae, the Grand Egyptian Museum, the Catacombs and the Citadel",
   "Nile Dinner Cruise in Cairo",
-  "Sunrise hot air balloon flight over Luxor",
+  "Sunrise hot air balloon flight over Luxor (weather permitting)",
   "Felucca sail on the Nile in Aswan",
-  "Airport pickup on arrival",
+  "Airport pickup — we meet you at Cairo airport and time your transfer",
 ];
 
 const notIncluded = [
@@ -612,6 +612,36 @@ const EgyptUnveiled = () => {
               </div>
             </ScrollReveal>
           </div>
+        </div>
+      </section>
+
+      {/* ── IF SOMETHING GOES WRONG ──────────────────────────────────────── */}
+      <section className="py-20 md:py-28 px-6" style={{ backgroundColor: "hsl(var(--cream))" }}>
+        <div className="max-w-2xl mx-auto">
+          <ScrollReveal>
+            <p className="text-foreground/50 font-body text-xs tracking-[0.35em] uppercase mb-5 text-center">
+              Looking After You
+            </p>
+            <h2 className="text-3xl md:text-4xl font-heading font-light text-foreground mb-10 text-center">
+              If something <span className="italic">goes wrong</span>
+            </h2>
+            <div className="space-y-6 font-body text-sm md:text-base text-foreground/65 leading-relaxed">
+              <p>
+                A licensed Egyptologist Lead Guide is with the group for all nine days.
+                You will have their name and mobile number two weeks before you fly.
+              </p>
+              <p>
+                They work to our written emergency procedures — the same document that
+                identifies the nearest hospital to each of your hotels before you leave
+                home, and that your guide confirms in writing they have read.
+              </p>
+              <p>
+                Egypt runs six hours ahead of Connecticut. If something happens while the
+                US is asleep, a named deputy holds the same authority, along with your
+                insurance details and your emergency contacts. There is always someone awake.
+              </p>
+            </div>
+          </ScrollReveal>
         </div>
       </section>
 

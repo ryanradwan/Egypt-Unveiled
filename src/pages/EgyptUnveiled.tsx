@@ -55,7 +55,7 @@ const days = [
     day: 7,
     location: "Luxor → Aswan",
     image: "https://images.pexels.com/photos/18934581/pexels-photo-18934581.jpeg?auto=compress&cs=tinysrgb&w=800",
-    sites: ["Scenic Drive Along the Nile", "Temple of Edfu", "Temple of Kom Ombo", "Arrival in Aswan"],
+    sites: ["Scenic Drive Along the Nile", "Arrival in Aswan"],
   },
   {
     day: 8,

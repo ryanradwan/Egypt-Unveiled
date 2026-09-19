@@ -55,13 +55,13 @@ const days = [
     day: 7,
     location: "Luxor → Aswan",
     image: "https://images.pexels.com/photos/18934581/pexels-photo-18934581.jpeg?auto=compress&cs=tinysrgb&w=800",
-    sites: ["Scenic Drive Along the Nile", "Arrival in Aswan"],
+    sites: ["Scenic Drive Along the Nile", "Arrival in Aswan", "Nubian Museum", "Unfinished Obelisk", "Sunset Felucca Sail"],
   },
   {
     day: 8,
     location: "Aswan",
     image: "https://images.pexels.com/photos/20319058/pexels-photo-20319058.jpeg?auto=compress&cs=tinysrgb&w=800",
-    sites: ["Philae Temple", "Aswan High Dam", "Unfinished Obelisk", "Nubian Museum", "Felucca Sail on the Nile", "Nubian Village", "Aswan Souk"],
+    sites: ["Philae Temple", "Aswan High Dam", "Nubian Village", "Aswan Souk"],
   },
   {
     day: 9,

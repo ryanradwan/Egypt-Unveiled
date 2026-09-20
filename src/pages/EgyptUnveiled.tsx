@@ -623,6 +623,68 @@ const EgyptUnveiled = () => {
         </div>
       </section>
 
+      {/* ── WHAT'S DIFFERENT ─────────────────────────────────────────────── */}
+      <section className="py-24 md:py-32 px-6 bg-background">
+        <div className="max-w-3xl mx-auto">
+          <ScrollReveal>
+            <div className="text-center mb-14">
+              <p className="text-foreground/50 font-body text-xs tracking-[0.35em] uppercase mb-5">
+                Worth Knowing
+              </p>
+              <h2 className="text-3xl md:text-5xl font-heading font-light text-foreground">
+                What&apos;s <span className="italic">different</span> about this one
+              </h2>
+            </div>
+          </ScrollReveal>
+
+          <div className="space-y-px">
+            {[
+              {
+                topic: "If you travel alone",
+                usual: "Most small-group Egypt tours add a single supplement of 15% to 60% for a room of your own. One well-known operator charges 43%.",
+                ours: "Ours is 15.6% — $383.81. That is the hotel room at cost, with nothing added on top.",
+              },
+              {
+                topic: "Who you share a room with",
+                usual: "Operators commonly avoid that supplement by pairing you with a same-sex stranger for eight nights.",
+                ours: "We never do this. You share only with a traveller you have named yourself, or you have a room of your own.",
+              },
+              {
+                topic: "Whether the trip actually runs",
+                usual: "Many tours can be cancelled for low numbers close to departure, after you have paid in full.",
+                ours: "We confirm or cancel 75 days out, before your balance is due. Once confirmed it runs. If it does not, your deposit and second payment are refunded in full.",
+              },
+              {
+                topic: "What the price covers",
+                usual: "A lower headline price often excludes site entry fees, most meals, or internal flights, and they are billed as you go.",
+                ours: "27 meals, every site entry, both internal flights, the sunrise balloon, the Nile dinner cruise and the felucca sail are all in the price.",
+              },
+              {
+                topic: "Who shows you around",
+                usual: "A single guide for the whole trip, or a different local pickup at every stop.",
+                ours: "A licensed Egyptologist with the group all nine days, plus specialist guides at six of the major sites.",
+              },
+            ].map(({ topic, usual, ours }, i) => (
+              <ScrollReveal key={topic} delay={i * 0.08}>
+                <div className="py-8 border-t border-foreground/10 last:border-b grid grid-cols-1 md:grid-cols-[1fr_1.6fr] gap-3 md:gap-10">
+                  <h3 className="font-heading text-lg md:text-xl font-light text-foreground">
+                    {topic}
+                  </h3>
+                  <div className="space-y-3">
+                    <p className="font-body text-sm text-foreground/45 leading-relaxed">
+                      {usual}
+                    </p>
+                    <p className="font-body text-sm text-foreground/80 leading-relaxed">
+                      <span className="text-[#7b5e43] mr-2">→</span>{ours}
+                    </p>
+                  </div>
+                </div>
+              </ScrollReveal>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* ── IF SOMETHING GOES WRONG ──────────────────────────────────────── */}
       <section className="py-20 md:py-28 px-6" style={{ backgroundColor: "hsl(var(--cream))" }}>
         <div className="max-w-2xl mx-auto">

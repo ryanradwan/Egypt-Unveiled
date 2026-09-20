@@ -165,7 +165,7 @@ const FaqAccordion = () => {
                   transition={{ duration: 0.3, ease: "easeInOut" }}
                   style={{ overflow: "hidden" }}
                 >
-                  <p className="px-7 pb-6 font-body text-sm text-foreground/60 leading-relaxed border-t border-foreground/8 pt-4">
+                  <p className="px-7 pb-6 font-body text-sm text-foreground/70 leading-relaxed border-t border-foreground/8 pt-4">
                     {faq.a}
                   </p>
                 </motion.div>
@@ -366,7 +366,7 @@ const EgyptUnveiled = () => {
                 <div className="bg-background p-8 border border-foreground/10 text-center h-full">
                   <p className="text-3xl mb-5">{icon}</p>
                   <h3 className="font-heading text-xl text-foreground mb-3">{title}</h3>
-                  <p className="font-body text-sm text-foreground/60 leading-relaxed">{description}</p>
+                  <p className="font-body text-sm text-foreground/70 leading-relaxed">{description}</p>
                 </div>
               </ScrollReveal>
             ))}
@@ -488,7 +488,7 @@ const EgyptUnveiled = () => {
                         >
                           <ul className="px-6 pb-6 space-y-2 border-t border-foreground/8 pt-4">
                             {day.sites.map((site) => (
-                              <li key={site} className="flex items-center gap-2.5 font-body text-sm text-foreground/60">
+                              <li key={site} className="flex items-center gap-2.5 font-body text-sm text-foreground/70">
                                 <span className="w-1 h-1 rounded-full bg-[#7b5e43] flex-shrink-0" />
                                 {site}
                               </li>
@@ -514,7 +514,7 @@ const EgyptUnveiled = () => {
               <h2 className="text-3xl md:text-5xl font-heading font-light text-foreground">
                 Your <span className="italic">Journey</span>
               </h2>
-              <p className="text-foreground/55 font-body text-sm mt-4 max-w-lg mx-auto leading-relaxed">
+              <p className="text-foreground/70 font-body text-sm mt-4 max-w-lg mx-auto leading-relaxed">
                 From the ancient capital to the gates of Nubia — a journey south along the Nile.
               </p>
             </div>
@@ -695,7 +695,7 @@ const EgyptUnveiled = () => {
             <h2 className="text-3xl md:text-4xl font-heading font-light text-foreground mb-10 text-center">
               If something <span className="italic">goes wrong</span>
             </h2>
-            <div className="space-y-6 font-body text-sm md:text-base text-foreground/65 leading-relaxed">
+            <div className="space-y-6 font-body text-sm md:text-base text-foreground/75 leading-relaxed">
               <p>
                 A licensed Egyptologist Lead Guide is with the group for all nine days.
                 You will have their name and mobile number two weeks before you fly.
@@ -723,7 +723,7 @@ const EgyptUnveiled = () => {
             <h2 className="text-3xl md:text-5xl font-heading font-light text-foreground mb-5">
               Tour <span className="italic">Pricing</span>
             </h2>
-            <p className="text-foreground/55 font-body text-sm leading-relaxed mb-14">
+            <p className="text-foreground/70 font-body text-sm leading-relaxed mb-14">
               All-inclusive per person pricing, in two room types. International flights not included.<br />Small groups of 6 to 15 guests.
             </p>
           </ScrollReveal>
@@ -789,11 +789,11 @@ const EgyptUnveiled = () => {
                   $500 to reserve your place&nbsp;&nbsp;·&nbsp;&nbsp;$1,000 at 90 days&nbsp;&nbsp;·&nbsp;&nbsp;balance at 60 days
                 </p>
 
-                <p className="text-foreground/60 font-body text-sm leading-relaxed mb-6">
+                <p className="text-foreground/70 font-body text-sm leading-relaxed mb-6">
                   Travelling alone? You book the private room — we never place you<br className="hidden sm:inline" />
                   with a stranger. It is priced at what the extra room costs us, nothing on top.
                 </p>
-                <p className="text-foreground/60 font-body text-sm leading-relaxed mb-6">
+                <p className="text-foreground/70 font-body text-sm leading-relaxed mb-6">
                   Upon approval, we'll send you a secure payment link.<br />No payment required to apply.
                 </p>
                 <p className="text-[#7b5e43] font-body text-xs tracking-[0.15em] uppercase mb-10">
@@ -871,7 +871,7 @@ const EgyptUnveiled = () => {
                   <p className="font-heading text-6xl font-light text-[#7b5e43]/25 mb-4">{step}</p>
                   <div className="w-8 h-px bg-[#7b5e43] mx-auto mb-5" />
                   <h3 className="font-heading text-2xl font-light text-foreground mb-4">{title}</h3>
-                  <p className="font-body text-sm text-foreground/60 leading-relaxed">{description}</p>
+                  <p className="font-body text-sm text-foreground/70 leading-relaxed">{description}</p>
                 </div>
               </ScrollReveal>
             ))}
@@ -904,7 +904,7 @@ const EgyptUnveiled = () => {
               <h2 className="text-3xl md:text-5xl font-heading font-light text-foreground">
                 Life on <span className="italic">the Tour</span>
               </h2>
-              <p className="text-foreground/55 font-body text-sm mt-4 max-w-lg mx-auto leading-relaxed">
+              <p className="text-foreground/70 font-body text-sm mt-4 max-w-lg mx-auto leading-relaxed">
                 A glimpse into what awaits — real places, real experiences.
               </p>
             </div>
@@ -1043,7 +1043,7 @@ const EgyptUnveiled = () => {
               <h2 className="text-3xl md:text-5xl font-heading font-light text-foreground">
                 Meet Your <span className="italic">Team</span>
               </h2>
-              <p className="text-foreground/55 font-body text-sm mt-4 max-w-lg mx-auto leading-relaxed">
+              <p className="text-foreground/70 font-body text-sm mt-4 max-w-lg mx-auto leading-relaxed">
                 Every great journey starts with the right people. Here's who will be by your side.
               </p>
             </div>
@@ -1063,7 +1063,7 @@ const EgyptUnveiled = () => {
                 <div className="border-t-2 border-[#7b5e43] pt-6">
                   <p className="text-[#7b5e43] font-body text-xs tracking-[0.3em] uppercase mb-2">Founder & Host</p>
                   <h3 className="font-heading text-2xl text-foreground mb-4">Ryan Radwan</h3>
-                  <p className="font-body text-sm text-foreground/65 leading-relaxed">
+                  <p className="font-body text-sm text-foreground/75 leading-relaxed">
                     Egypt has always been more than a destination to me — it's where history becomes tangible. I created The Next Stamp Tours because I believe travel should be transformative, not transactional. Every detail of this journey is something I've personally experienced, vetted, and designed so that you can show up and simply be present. My goal is simple: to give you the Egypt I fell in love with.
                   </p>
                 </div>
@@ -1083,7 +1083,7 @@ const EgyptUnveiled = () => {
                 <div className="border-t-2 border-[#7b5e43] pt-6">
                   <p className="text-[#7b5e43] font-body text-xs tracking-[0.3em] uppercase mb-2">Lead Tour Operator</p>
                   <h3 className="font-heading text-2xl text-foreground mb-4">Mohammed Mustafa</h3>
-                  <p className="font-body text-sm text-foreground/65 leading-relaxed">
+                  <p className="font-body text-sm text-foreground/75 leading-relaxed">
                     Mohammed was born and raised in the shadow of the Pyramids, and that upbringing shaped everything about how he leads a tour. With years of on-the-ground experience guiding travelers through Egypt's most iconic and hidden sites, he brings a depth of knowledge that no guidebook can replicate. Fluent in English and Arabic, Mohammed has a gift for making history feel alive — whether he's walking you through the Valley of the Kings or navigating the winding streets of Islamic Cairo. With Mohammed leading the way, you're not just seeing Egypt. You're understanding it.
                   </p>
                 </div>
@@ -1102,7 +1102,7 @@ const EgyptUnveiled = () => {
               <h2 className="text-3xl md:text-5xl font-heading font-light text-foreground mb-5">
                 Apply <span className="italic">Now</span>
               </h2>
-              <p className="text-foreground/55 font-body text-sm leading-relaxed">
+              <p className="text-foreground/70 font-body text-sm leading-relaxed">
                 We review every application personally and respond within 48 hours.
               </p>
             </div>
@@ -1139,7 +1139,7 @@ const EgyptUnveiled = () => {
               <div className="bg-background border border-[#7b5e43]/30 p-12 text-center">
                 <p className="text-[#7b5e43] font-body text-xs tracking-[0.3em] uppercase mb-4">Application Received</p>
                 <h3 className="font-heading text-3xl font-light text-foreground mb-4">Thank You</h3>
-                <p className="font-body text-sm text-foreground/60 leading-relaxed">
+                <p className="font-body text-sm text-foreground/70 leading-relaxed">
                   We'll review your application and be in touch within 48 hours at the email you provided.
                 </p>
               </div>

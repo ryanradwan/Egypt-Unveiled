@@ -79,6 +79,13 @@
     @apply border-border;
   }
 
+  /* Base type scale. Tailwind's sizes are rem-based, so raising this lifts
+     the whole page proportionally: text-sm 14px -> 15.75px, text-base
+     16px -> 18px, text-xs 12px -> 13.5px. */
+  html {
+    font-size: 112.5%;
+  }
+
   body {
     @apply bg-background text-foreground font-body antialiased;
   }

@@ -763,12 +763,11 @@ const EgyptUnveiled = () => {
                       Private Room
                     </p>
                     <p className="text-foreground/35 font-body text-xs line-through mb-1 tracking-wide">
-                      $2,843.81
+                      $2,844
                     </p>
                     <p className="font-heading font-light text-foreground leading-none mb-3">
                       <span className="text-2xl align-top mt-1 inline-block">$</span>
-                      <span className="text-6xl">2,743</span>
-                      <span className="text-2xl align-top mt-1 inline-block">.81</span>
+                      <span className="text-6xl">2,744</span>
                     </p>
                     <p className="font-body text-xs text-foreground/50 leading-relaxed">
                       Per person, a room of your<br />own for all 8 nights

@@ -124,7 +124,7 @@ const faqs = [
   },
   {
     q: "What if the person I'm sharing with cancels?",
-    a: "The hotel charges for the room whether one person sleeps in it or two, so the room still has to be paid for. You have two options: nominate a replacement traveller who books the same departure at the sharing rate, or pay the difference between the two published rates — $383.81 — and have the room to yourself. We'll write to you with the amount, and it's payable within 14 days of that notice or by your final payment date, whichever comes first. This is Section 2.5 of your Tour Booking Agreement, and it's worth reading before you book with a companion.",
+    a: "The hotel charges for the room whether one person sleeps in it or two, so the room still has to be paid for. You have two options: nominate a replacement traveller who books the same departure at the sharing rate, or pay the difference between the two published rates — $384 — and have the room to yourself. We'll write to you with the amount, and it's payable within 14 days of that notice or by your final payment date, whichever comes first. This is Section 2.5 of your Tour Booking Agreement, and it's worth reading before you book with a companion.",
   },
   {
     q: "What happens if the group doesn't fill?",
@@ -642,7 +642,7 @@ const EgyptUnveiled = () => {
               {
                 topic: "If you travel alone",
                 usual: "Most small-group Egypt tours add a single supplement of 15% to 60% for a room of your own. One well-known operator charges 43%.",
-                ours: "Ours is 15.6% — $383.81. That is the hotel room at cost, with nothing added on top.",
+                ours: "Ours is 15.6% — $384. That is the hotel room at cost, with nothing added on top.",
               },
               {
                 topic: "Who you share a room with",
@@ -745,12 +745,11 @@ const EgyptUnveiled = () => {
                       Sharing a Twin
                     </p>
                     <p className="text-foreground/35 font-body text-xs line-through mb-1 tracking-wide">
-                      $2,460.00
+                      $2,460
                     </p>
                     <p className="font-heading font-light text-foreground leading-none mb-3">
                       <span className="text-2xl align-top mt-1 inline-block">$</span>
                       <span className="text-6xl">2,360</span>
-                      <span className="text-2xl align-top mt-1 inline-block">.00</span>
                     </p>
                     <p className="font-body text-xs text-foreground/50 leading-relaxed">
                       Per person, for two travellers<br />booking together

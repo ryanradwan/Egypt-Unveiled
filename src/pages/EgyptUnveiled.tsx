@@ -180,6 +180,7 @@ const FaqAccordion = () => {
 
 const EgyptUnveiled = () => {
   const [openDay, setOpenDay] = useState<number | null>(null);
+  const [journeyPlaying, setJourneyPlaying] = useState(false);
   const [activeForm, setActiveForm] = useState<"tourist" | "operator">("tourist");
   const [copied, setCopied] = useState(false);
 
@@ -574,6 +575,68 @@ const EgyptUnveiled = () => {
                 <p className="font-body text-xs text-foreground/35 tracking-wide">🚌 Scenic bus ride</p>
                 <p className="font-body text-xs text-foreground/25">Luxor → Aswan, Day 7</p>
               </div>
+            </div>
+          </ScrollReveal>
+        </div>
+      </section>
+
+      {/* ── 3D JOURNEY ───────────────────────────────────────────────────── */}
+      <section className="py-24 md:py-32 px-6" style={{ background: "#231810" }}>
+        <div className="max-w-5xl mx-auto">
+          <ScrollReveal>
+            <div className="text-center mb-14">
+              <p className="text-[#d4a23c] font-body text-xs tracking-[0.35em] uppercase mb-5">
+                Watch It
+              </p>
+              <h2 className="text-3xl md:text-5xl font-heading font-light text-[#f3e8da]">
+                Nine days in <span className="italic">sixty seconds</span>
+              </h2>
+              <p className="text-[#f3e8da]/70 font-body text-sm mt-5 max-w-lg mx-auto leading-relaxed">
+                The whole route built in 3D and flown start to finish &mdash; Cairo, Alexandria,
+                Luxor, Aswan, every temple and both internal flights. Sound on if you can.
+              </p>
+            </div>
+          </ScrollReveal>
+
+          <ScrollReveal delay={0.1}>
+            <div className="mx-auto w-full max-w-[400px]">
+              <div className="relative w-full aspect-[9/16] overflow-hidden rounded-[28px] border border-[#d4a23c]/60 shadow-[0_30px_70px_-25px_rgba(0,0,0,0.8)]">
+                {journeyPlaying ? (
+                  <iframe
+                    src="/egypt-3d-journey.html"
+                    title="Egypt Unveiled — the nine-day route in 3D"
+                    className="absolute inset-0 w-full h-full border-0"
+                    allow="autoplay; fullscreen"
+                  />
+                ) : (
+                  <button
+                    type="button"
+                    onClick={() => setJourneyPlaying(true)}
+                    aria-label="Play the 3D journey"
+                    className="absolute inset-0 w-full h-full group cursor-pointer"
+                  >
+                    <img
+                      src={heroEgypt}
+                      alt=""
+                      className="absolute inset-0 w-full h-full object-cover"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-b from-black/45 via-black/55 to-black/75" />
+                    <div className="absolute inset-0 flex flex-col items-center justify-center">
+                      <div className="w-20 h-20 rounded-full border border-[#d4a23c] bg-[#d4a23c]/15 backdrop-blur-sm flex items-center justify-center transition-transform duration-300 group-hover:scale-110">
+                        <span className="text-[#f3e8da] text-2xl ml-1.5 leading-none">&#9654;</span>
+                      </div>
+                      <p className="font-heading text-2xl text-[#f3e8da] mt-7">Play the journey</p>
+                      <p className="font-body text-xs text-[#f3e8da]/60 tracking-[0.05em] mt-2">
+                        Loads when you tap
+                      </p>
+                    </div>
+                  </button>
+                )}
+              </div>
+
+              <p className="text-center font-body text-xs text-[#f3e8da]/45 leading-relaxed mt-5">
+                Runs on a loop. Nothing loads until you tap it, so the rest of this page stays quick.
+              </p>
             </div>
           </ScrollReveal>
         </div>

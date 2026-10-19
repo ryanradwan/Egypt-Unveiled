@@ -581,7 +581,7 @@ const EgyptUnveiled = () => {
       </section>
 
       {/* ── 3D JOURNEY ───────────────────────────────────────────────────── */}
-      <section className="py-24 md:py-32 px-6" style={{ background: "#dbccb3" }}>
+      <section className="py-24 md:py-32 px-6 bg-background">
         <div className="max-w-6xl mx-auto">
           <ScrollReveal>
             <div className="text-center mb-14">

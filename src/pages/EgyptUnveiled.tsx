@@ -940,6 +940,92 @@ const EgyptUnveiled = () => {
         </div>
       </section>
 
+      {/* ── TRAVEL INSURANCE ───────────────────────────────────────── */}
+      <section id="travel-insurance" className="py-24 md:py-32 px-6" style={{ backgroundColor: "hsl(var(--cream))" }}>
+        <div className="max-w-4xl mx-auto">
+          <ScrollReveal>
+            <div className="text-center mb-14">
+              <p className="text-foreground/50 font-body text-xs tracking-[0.35em] uppercase mb-5">
+                Travel Insurance
+              </p>
+              <h2 className="text-3xl md:text-5xl font-heading font-light text-foreground mb-5">
+                Protect Your <span className="italic">Egypt</span> Trip
+              </h2>
+              <p className="text-foreground/70 font-body text-sm leading-relaxed max-w-2xl mx-auto">
+                Travel plans can change. If you're joining the Egypt Unveiled tour, we've
+                partnered with USI Travel Insurance Services so you can protect your trip with
+                coverage for trip cancellation, trip interruption, emergency medical, baggage,
+                and travel delays.
+              </p>
+            </div>
+          </ScrollReveal>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {[
+              {
+                title: "For U.S. Residents",
+                text: "Comprehensive Tour Protection Plan underwritten by Starr. Includes trip cancellation and interruption up to 100% of trip cost, emergency medical, and medical evacuation, with an optional Cancel For Any Reason upgrade.",
+                href: "https://www.travelinsure.com/thenextstamp/",
+                label: "Get a travel insurance quote for U.S. residents (opens in new tab)",
+              },
+              {
+                title: "For Travelers Outside the U.S.",
+                text: "UnitedHealthcare Global SafeTrip plans for non-U.S. residents. Choose a \u201cPlus\u201d plan when quoting to include trip cancellation coverage.",
+                href: "https://www.uhcsafetrip.com/get-quote/?agent=usi_50109",
+                label: "Get a travel insurance quote for travelers outside the U.S. (opens in new tab)",
+              },
+            ].map(({ title, text, href, label }, i) => (
+              <ScrollReveal key={title} delay={i * 0.1} className="h-full">
+                <div className="h-full flex flex-col border border-foreground/10 bg-background p-8 md:p-10">
+                  <h3 className="font-heading text-2xl font-light text-foreground mb-4">
+                    {title}
+                  </h3>
+                  <div className="w-8 h-px bg-[#7b5e43] mb-5" />
+                  <p className="flex-1 font-body text-sm text-foreground/70 leading-relaxed mb-8">
+                    {text}
+                  </p>
+                  <a
+                    href={href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label={label}
+                    className="inline-block self-start bg-[#7b5e43] text-primary-foreground px-10 py-4 text-xs tracking-[0.2em] uppercase font-body font-medium hover:bg-warm hover:text-warm-foreground transition-colors duration-300"
+                  >
+                    Get a Free Quote
+                  </a>
+                </div>
+              </ScrollReveal>
+            ))}
+          </div>
+
+          <ScrollReveal delay={0.2}>
+            <div className="bg-[#7b5e43]/8 border border-[#7b5e43]/20 px-6 py-4 mt-8">
+              <p className="font-body text-sm text-foreground/70 leading-relaxed">
+                <span className="text-[#7b5e43] font-medium">Tip:</span> Buy within 14 days of
+                your first tour deposit to qualify for the pre-existing conditions waiver and the
+                optional Cancel For Any Reason upgrade.
+              </p>
+            </div>
+          </ScrollReveal>
+
+          <ScrollReveal delay={0.25}>
+            <p className="font-body text-xs text-foreground/50 leading-relaxed mt-6">
+              Questions about coverage? Call USI Travel Insurance Services at{" "}
+              <a
+                href="tel:+18558740156"
+                className="text-[#7b5e43] underline underline-offset-4 hover:text-warm transition-colors"
+              >
+                (855) 874-0156
+              </a>
+              . Coverage is provided by USI Travel Insurance Services, not The Next Stamp Travel
+              Co. Read the full policy for coverage details, limits, and exclusions. Cancel For
+              Any Reason is not available to New York residents.
+            </p>
+          </ScrollReveal>
+        </div>
+      </section>
+
+
       {/* ── FAQ ──────────────────────────────────────────────────────────── */}
       <section id="faq" className="py-24 md:py-32 px-6" style={{ backgroundColor: DARK }}>
         <div className="max-w-3xl mx-auto">

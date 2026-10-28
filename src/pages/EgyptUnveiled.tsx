@@ -674,7 +674,7 @@ const EgyptUnveiled = () => {
                 Nine days in <span className="italic">sixty seconds</span>
               </h2>
               <p className="text-foreground/70 font-body text-sm mt-5 max-w-lg mx-auto leading-relaxed">
-                The whole route built in 3D and flown start to finish &mdash; Cairo, Alexandria,
+                The whole route built in 3D and flown start to finish. Cairo, Alexandria,
                 Luxor, Aswan, every temple and both internal flights. Sound on if you can.
               </p>
             </div>

@@ -432,6 +432,88 @@ const EgyptUnveiled = () => {
         </div>
       </section>
 
+      {/* ── SCHEDULE ───────────────────────────────────────────── */}
+      <section id="schedule" className="py-24 md:py-32 px-6" style={{ backgroundColor: "hsl(var(--cream))" }}>
+        <div className="max-w-4xl mx-auto">
+          <ScrollReveal>
+            <div className="text-center mb-14">
+              <p className="text-foreground/50 font-body text-xs tracking-[0.35em] uppercase mb-5">
+                The Schedule
+              </p>
+              <h2 className="text-3xl md:text-5xl font-heading font-light text-foreground mb-5">
+                Nine days, <span className="italic">night by night</span>
+              </h2>
+              <p className="text-foreground/70 font-body text-sm leading-relaxed max-w-xl mx-auto">
+                The shape of the trip at a glance, with the dates of the first departure.
+                The full detail of each day follows below.
+              </p>
+            </div>
+          </ScrollReveal>
+
+          <ScrollReveal delay={0.1}>
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 sm:gap-6 mb-14 text-center">
+              {[
+                { label: "First Departure", value: "10 to 18 April 2027" },
+                { label: "Length", value: "9 days, 8 nights" },
+                { label: "Where You Sleep", value: "4 nights Cairo, 2 Luxor, 2 Aswan" },
+              ].map(({ label, value }) => (
+                <div key={label}>
+                  <p className="text-foreground/50 font-body text-[0.7rem] tracking-[0.2em] uppercase mb-3">
+                    {label}
+                  </p>
+                  <div className="w-8 h-px bg-[#7b5e43] mx-auto mb-3" />
+                  <p className="font-heading text-lg font-light text-foreground leading-snug">
+                    {value}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </ScrollReveal>
+
+          <div>
+            {[
+              { n: "01", date: "Sat 10 Apr", city: "Cairo", what: "Arrive, airport transfer, and the Nile dinner cruise in the evening." },
+              { n: "02", date: "Sun 11 Apr", city: "Cairo", what: "The Grand Egyptian Museum, the Great Pyramids of Giza and the Sphinx." },
+              { n: "03", date: "Mon 12 Apr", city: "Cairo", what: "Day trip to Alexandria: the Bibliotheca, Qaitbay Citadel, the Catacombs of Kom el-Shoqafa and Pompey's Pillar." },
+              { n: "04", date: "Tue 13 Apr", city: "Cairo", what: "Islamic Cairo: the Citadel of Saladin, the great mosques, Al-Muizz Street and Khan el-Khalili." },
+              { n: "05", date: "Wed 14 Apr", city: "Luxor", what: "Morning flight to Luxor, then Luxor Temple and the Luxor Museum." },
+              { n: "06", date: "Thu 15 Apr", city: "Luxor", what: "Sunrise balloon over the West Bank, the Valley of the Kings, Hatshepsut, the Tombs of the Nobles and Karnak." },
+              { n: "07", date: "Fri 16 Apr", city: "Aswan", what: "The drive south along the Nile to Aswan, the Unfinished Obelisk and the Nubian Museum, then a felucca at sunset." },
+              { n: "08", date: "Sat 17 Apr", city: "Aswan", what: "Philae Temple, the Aswan High Dam, the Nubian village and the Aswan souk." },
+              { n: "09", date: "Sun 18 Apr", city: null, what: "Return flight to Cairo. The tour ends at Cairo airport." },
+            ].map(({ n, date, city, what }, i) => (
+              <ScrollReveal key={n} delay={i * 0.05}>
+                <div className="py-6 border-t border-foreground/10 last:border-b grid grid-cols-[3rem_1fr] md:grid-cols-[3rem_7.5rem_1fr] gap-x-5 gap-y-1 items-baseline">
+                  <p className="font-heading text-3xl font-light text-[#7b5e43]/40 leading-none">
+                    {n}
+                  </p>
+                  <p className="font-body text-xs tracking-[0.18em] uppercase text-foreground/55">
+                    {date}
+                  </p>
+                  <div className="col-start-2 md:col-start-3">
+                    <p className="font-heading text-lg font-light text-foreground">
+                      {city ? `Night in ${city}` : "No hotel night"}
+                    </p>
+                    <p className="font-body text-sm text-foreground/70 leading-relaxed mt-1">
+                      {what}
+                    </p>
+                  </div>
+                </div>
+              </ScrollReveal>
+            ))}
+          </div>
+
+          <ScrollReveal delay={0.2}>
+            <p className="font-body text-xs text-foreground/50 leading-relaxed mt-6">
+              Day 9 has no hotel night. The group flies Aswan to Cairo and the tour ends at Cairo
+              airport, so your flight home leaves Cairo that day. International flights are not
+              included and the balloon on Day 6 is weather permitting.
+            </p>
+          </ScrollReveal>
+        </div>
+      </section>
+
+
       {/* ── ITINERARY ────────────────────────────────────────────────────── */}
       <section id="itinerary" className="py-24 md:py-32 px-6" style={{ backgroundColor: DARK }}>
         <div className="max-w-6xl mx-auto">

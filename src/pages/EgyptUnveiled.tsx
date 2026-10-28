@@ -74,20 +74,20 @@ const days = [
 const included = [
   "All internal flights",
   "4-star hotel accommodations (8 nights)",
-  "All meals — breakfast, lunch & dinner",
+  "All meals: breakfast, lunch & dinner",
   "All entrance fees",
   "Private ground transportation",
-  "Licensed Egyptologist Lead Guide — all 9 days",
+  "Licensed Egyptologist Lead Guide for all 9 days",
   "Specialist guides at the Valley of the Kings, Karnak, Philae, the Grand Egyptian Museum, the Catacombs and the Citadel",
   "Nile Dinner Cruise in Cairo",
   "Sunrise hot air balloon flight over Luxor (weather permitting)",
   "Felucca sail on the Nile in Aswan",
-  "Airport pickup — we meet you at Cairo airport and time your transfer",
+  "Airport pickup: we meet you at Cairo airport and time your transfer",
 ];
 
 const notIncluded = [
   "International flights",
-  "Egypt visa (e-Visa or on arrival — depends on your nationality)",
+  "Egypt visa (e-Visa or on arrival, depending on your nationality)",
   "Travel insurance",
   "Personal expenses & shopping",
   "Gratuities & tips",
@@ -96,43 +96,43 @@ const notIncluded = [
 const faqs = [
   {
     q: "Is this tour suitable for all fitness levels?",
-    a: "Be honest with yourself on this one. You'll cover roughly 3 to 5 miles across a full day, much of it on sand, gravel and uneven ancient stone. Tombs in the Valley of the Kings are entered down steep ramps and stairs, with low ceilings and no air conditioning. Expect sun exposure, long travel days and a fair amount of standing. None of this demands unusual fitness and guests of many ages and abilities love it — but if any of it gives you pause, tell us before you apply. There is usually a way to adapt something in advance, and we would far rather do that than watch you struggle at Karnak.",
+    a: "Be honest with yourself on this one. You'll cover roughly 3 to 5 miles across a full day, much of it on sand, gravel and uneven ancient stone. Tombs in the Valley of the Kings are entered down steep ramps and stairs, with low ceilings and no air conditioning. Expect sun exposure, long travel days and a fair amount of standing. None of this demands unusual fitness and guests of many ages and abilities love it. But if any of it gives you pause, tell us before you apply. There is usually a way to adapt something in advance, and we would far rather do that than watch you struggle at Karnak.",
   },
   {
     q: "Can you handle dietary requirements and allergies?",
-    a: "Yes — and please tell us early rather than on the first night. Every meal across the nine days is included, so this matters. Before final payment we ask you to complete a medical and dietary disclosure covering allergies, intolerances and any requirement such as vegetarian, halal, kosher or gluten-free. What you share goes only to the guides, hotels and restaurants who need it in order to look after you properly. If you have a severe allergy, say so when you apply and we will confirm what is workable before you commit.",
+    a: "Yes, and please tell us early rather than on the first night. Every meal across the nine days is included, so this matters. Before final payment we ask you to complete a medical and dietary disclosure covering allergies, intolerances and any requirement such as vegetarian, halal, kosher or gluten-free. What you share goes only to the guides, hotels and restaurants who need it in order to look after you properly. If you have a severe allergy, say so when you apply and we will confirm what is workable before you commit.",
   },
   {
     q: "Can solo travelers join?",
-    a: "Absolutely, and plenty do. There are two rates. The sharing rate is for two travellers booking together into one twin or double room, each naming the other. The private-room rate gives you a room of your own for all eight nights. If you book alone you book the private room — we never place you in a room with someone you haven't named. The private-room rate is the sharing rate plus exactly what that extra hotel room costs us, with nothing added on top. For comparison, single supplements on comparable Egypt tours run 15 to 60 percent.",
+    a: "Absolutely, and plenty do. There are two rates. The sharing rate is for two travellers booking together into one twin or double room, each naming the other. The private-room rate gives you a room of your own for all eight nights. If you book alone you book the private room. We never place you in a room with someone you haven't named. The private-room rate is the sharing rate plus exactly what that extra hotel room costs us, with nothing added on top. For comparison, single supplements on comparable Egypt tours run 15 to 60 percent.",
   },
   {
     q: "What is the cancellation policy?",
-    a: "A $500 per-person deposit secures your spot and is non-refundable — with one exception: cancel within 48 hours of booking and you get everything back, deposit included, provided your departure is still more than 60 days away. After that it works in four steps. Cancel 75 or more days before departure and everything except the deposit is refunded, including your second payment. Cancel 60 to 74 days out and we retain the deposit plus half the second payment, $1,000 in total, and refund the rest. Cancel 30 to 59 days out and you'll receive 50% of the remaining tour price back. Cancel 29 days or fewer before departure and no refund is available. The charges step up as departure approaches because we confirm your departure at 75 days and begin booking your hotel room and internal Egyptian flights in your name from that point, and we pay our local operator half shortly after balances fall due at 60 days and the rest on the day you arrive. One other option worth knowing: instead of cancelling you can transfer your place to someone else, up to 30 days before departure, for a $100 administrative fee plus any supplier costs we can't recover. Full terms are in your Tour Booking Agreement, which you review and sign before any payment.",
+    a: "A $500 per-person deposit secures your spot and is non-refundable, with one exception: cancel within 48 hours of booking and you get everything back, deposit included, provided your departure is still more than 60 days away. After that it works in four steps. Cancel 75 or more days before departure and everything except the deposit is refunded, including your second payment. Cancel 60 to 74 days out and we retain the deposit plus half the second payment, $1,000 in total, and refund the rest. Cancel 30 to 59 days out and you'll receive 50% of the remaining tour price back. Cancel 29 days or fewer before departure and no refund is available. The charges step up as departure approaches because we confirm your departure at 75 days and begin booking your hotel room and internal Egyptian flights in your name from that point, and we pay our local operator half shortly after balances fall due at 60 days and the rest on the day you arrive. One other option worth knowing: instead of cancelling you can transfer your place to someone else, up to 30 days before departure, for a $100 administrative fee plus any supplier costs we can't recover. Full terms are in your Tour Booking Agreement, which you review and sign before any payment.",
   },
   {
     q: "Do I need travel insurance?",
-    a: "Yes — travel insurance is required for every guest, and you arrange it yourself before travel. At minimum your policy must cover emergency medical treatment abroad ($50,000) and emergency medical evacuation and repatriation ($100,000). We'll need your insurer, policy number and 24-hour assistance line no later than 75 days before departure, sent in with your registration form — ahead of your final balance, not alongside it. We also strongly recommend adding trip-cancellation coverage — not required, but it's what protects the money you've put toward the trip. One thing to be clear about: if something happens on tour, your medical treatment, hospital admission, emergency transport and replacement documents are your own financial responsibility, met by you, your emergency contact or your insurer. Your Lead Guide will get you to care, stay with you or arrange someone who can, and help you reach your insurer and your emergency contact — but that support is coordination, not payment.",
+    a: "Yes. Travel insurance is required for every guest, and you arrange it yourself before travel. At minimum your policy must cover emergency medical treatment abroad ($50,000) and emergency medical evacuation and repatriation ($100,000). We'll need your insurer, policy number and 24-hour assistance line no later than 75 days before departure, sent in with your registration form, ahead of your final balance, not alongside it. We also strongly recommend adding trip-cancellation coverage. It is not required, but it's what protects the money you've put toward the trip. One thing to be clear about: if something happens on tour, your medical treatment, hospital admission, emergency transport and replacement documents are your own financial responsibility, met by you, your emergency contact or your insurer. Your Lead Guide will get you to care, stay with you or arrange someone who can, and help you reach your insurer and your emergency contact. But that support is coordination, not payment.",
   },
   {
     q: "Is there an age requirement?",
-    a: "This is an adults-only tour. We don't carry minors, student groups or school parties, and the pace and content are built for adults travelling independently. If you're planning a trip with someone under 18, this isn't the right departure — reach out and we'll tell you honestly whether we can help another way.",
+    a: "This is an adults-only tour. We don't carry minors, student groups or school parties, and the pace and content are built for adults travelling independently. If you're planning a trip with someone under 18, this isn't the right departure. Reach out and we'll tell you honestly whether we can help another way.",
   },
   {
     q: "What should I pack and is there a dress code?",
-    a: "Egypt has a respectful dress code, especially at religious sites like mosques and the Citadel. Shoulders and knees should be covered — light layers work well. Comfortable walking shoes, sunscreen, a hat, and a refillable water bottle are essentials. A full packing guide is sent to approved guests.",
+    a: "Egypt has a respectful dress code, especially at religious sites like mosques and the Citadel. Shoulders and knees should be covered, and light layers work well. Comfortable walking shoes, sunscreen, a hat, and a refillable water bottle are essentials. A full packing guide is sent to approved guests.",
   },
   {
     q: "What if the person I'm sharing with cancels?",
-    a: "The hotel charges for the room whether one person sleeps in it or two, so the room still has to be paid for. You have two options: nominate a replacement traveller who books the same departure at the sharing rate, or pay the difference between the two published rates — $384 — and have the room to yourself. We'll write to you with the amount, and it's payable within 14 days of that notice or by your final payment date, whichever comes first. This is Section 2.5 of your Tour Booking Agreement, and it's worth reading before you book with a companion.",
+    a: "The hotel charges for the room whether one person sleeps in it or two, so the room still has to be paid for. You have two options: nominate a replacement traveller who books the same departure at the sharing rate, or pay the difference between the two published rates, $384, and have the room to yourself. We'll write to you with the amount, and it's payable within 14 days of that notice or by your final payment date, whichever comes first. This is Section 2.5 of your Tour Booking Agreement, and it's worth reading before you book with a companion.",
   },
   {
     q: "What happens if the group doesn't fill?",
-    a: "We confirm or cancel every departure 75 days before it leaves, and we need a minimum of 6 guests to run. That date sits ahead of your final balance, so if a departure doesn't fill the only money you've paid is your deposit and your $1,000 second payment — and we refund both in full, or move them to a future departure if you'd rather. Once we confirm a departure at the 75-day mark it is guaranteed to run, and we will not cancel it afterwards for numbers.",
+    a: "We confirm or cancel every departure 75 days before it leaves, and we need a minimum of 6 guests to run. That date sits ahead of your final balance, so if a departure doesn't fill the only money you've paid is your deposit and your $1,000 second payment, and we refund both in full, or move them to a future departure if you'd rather. Once we confirm a departure at the 75-day mark it is guaranteed to run, and we will not cancel it afterwards for numbers.",
   },
   {
     q: "How does the approval process work?",
-    a: "Submit your application — no payment needed. We personally review it and respond within 48 hours. If approved, we'll send you your Tour Booking Agreement and a secure payment link for the $500 deposit. Your spot is confirmed once the agreement is signed and the deposit is received. Payment comes in three parts: the $500 deposit, a $1,000 second payment 90 days before departure, and the balance at 60 days. Alongside that: we confirm the departure itself 75 days out, and your registration form, passport copy and travel insurance details are all due at that point; your flight details at 45 days; visa confirmation at 30; and we send your final documents 14 days before you fly.",
+    a: "Submit your application. No payment needed. We personally review it and respond within 48 hours. If approved, we'll send you your Tour Booking Agreement and a secure payment link for the $500 deposit. Your spot is confirmed once the agreement is signed and the deposit is received. Payment comes in three parts: the $500 deposit, a $1,000 second payment 90 days before departure, and the balance at 60 days. Alongside that: we confirm the departure itself 75 days out, and your registration form, passport copy and travel insurance details are all due at that point; your flight details at 45 days; visa confirmation at 30; and we send your final documents 14 days before you fly.",
   },
 ];
 
@@ -233,7 +233,7 @@ const EgyptUnveiled = () => {
 
       setSubmitted(true);
     } catch {
-      // fail silently — user can email directly
+      // fail silently; user can email directly
     } finally {
       setSubmitting(false);
     }
@@ -299,13 +299,13 @@ const EgyptUnveiled = () => {
       <section className="py-24 md:py-32 px-6" style={{ backgroundColor: "hsl(var(--cream))" }}>
         <div className="max-w-3xl mx-auto text-center">
           <ScrollReveal>
-            <p className="text-foreground/50 font-body text-xs tracking-[0.35em] uppercase mb-5">The Journey</p>
+            <p className="text-foreground/65 font-body text-xs tracking-[0.35em] uppercase mb-5">The Journey</p>
             <h2 className="text-3xl md:text-5xl font-heading font-light text-foreground leading-tight mb-8">
               Ancient Wonders.<br />
               <span className="italic">Modern Comfort.</span>
             </h2>
             <p className="text-foreground/65 font-body text-base md:text-lg leading-relaxed mb-14 max-w-2xl mx-auto">
-              From the iconic Pyramids of Giza to the tranquil waters of the Nile in Aswan, Egypt Unveiled is a carefully curated 9-day journey through one of the world's greatest civilizations — in a small, intimate group with every detail handled for you.
+              From the iconic Pyramids of Giza to the tranquil waters of the Nile in Aswan, Egypt Unveiled is a carefully curated 9-day journey through one of the world's greatest civilizations, in a small, intimate group with every detail handled for you.
             </p>
           </ScrollReveal>
 
@@ -320,7 +320,7 @@ const EgyptUnveiled = () => {
               ].map(({ number, label }) => (
                 <div key={label} className="text-center">
                   <p className="font-heading text-4xl font-light text-[#7b5e43] mb-1">{number}</p>
-                  <p className="font-body text-xs tracking-[0.2em] uppercase text-foreground/50">{label}</p>
+                  <p className="font-body text-xs tracking-[0.2em] uppercase text-foreground/65">{label}</p>
                 </div>
               ))}
             </div>
@@ -333,7 +333,7 @@ const EgyptUnveiled = () => {
         <div className="max-w-5xl mx-auto">
           <ScrollReveal>
             <div className="text-center mb-16">
-              <p className="text-foreground/50 font-body text-xs tracking-[0.35em] uppercase mb-5">Perfect Timing</p>
+              <p className="text-foreground/65 font-body text-xs tracking-[0.35em] uppercase mb-5">Perfect Timing</p>
               <h2 className="text-3xl md:text-5xl font-heading font-light text-foreground">
                 Why <span className="italic">April?</span>
               </h2>
@@ -345,7 +345,7 @@ const EgyptUnveiled = () => {
               {
                 icon: "🌤️",
                 title: "Shoulder Season",
-                description: "April sits between Egypt's winter peak and its summer heat — fewer people at every site, and rates below the December high season.",
+                description: "April sits between Egypt's winter peak and its summer heat: fewer people at every site, and rates below the December high season.",
               },
               {
                 icon: "🎈",
@@ -355,7 +355,7 @@ const EgyptUnveiled = () => {
               {
                 icon: "🏛️",
                 title: "Long, Clear Days",
-                description: "More daylight than the winter months and dry, settled skies — full touring days and clean views across the Giza Plateau.",
+                description: "More daylight than the winter months and dry, settled skies: full touring days and clean views across the Giza Plateau.",
               },
               {
                 icon: "⛵",
@@ -380,7 +380,7 @@ const EgyptUnveiled = () => {
         <div className="max-w-4xl mx-auto">
           <ScrollReveal>
             <div className="text-center mb-14">
-              <p className="text-foreground/50 font-body text-xs tracking-[0.35em] uppercase mb-5">Self Qualify</p>
+              <p className="text-foreground/65 font-body text-xs tracking-[0.35em] uppercase mb-5">Self Qualify</p>
               <h2 className="text-3xl md:text-5xl font-heading font-light text-foreground">
                 Is This Tour <span className="italic">Right for You?</span>
               </h2>
@@ -421,7 +421,7 @@ const EgyptUnveiled = () => {
                     "You require a fully private, customized itinerary",
                   ].map((item) => (
                     <li key={item} className="flex items-start gap-3 font-body text-sm text-foreground/70">
-                      <span className="text-foreground/35 mt-0.5 flex-shrink-0">✕</span>
+                      <span className="text-foreground/65 mt-0.5 flex-shrink-0">✕</span>
                       {item}
                     </li>
                   ))}
@@ -437,7 +437,7 @@ const EgyptUnveiled = () => {
         <div className="max-w-4xl mx-auto">
           <ScrollReveal>
             <div className="text-center mb-14">
-              <p className="text-foreground/50 font-body text-xs tracking-[0.35em] uppercase mb-5">
+              <p className="text-foreground/65 font-body text-xs tracking-[0.35em] uppercase mb-5">
                 The Schedule
               </p>
               <h2 className="text-3xl md:text-5xl font-heading font-light text-foreground mb-5">
@@ -458,7 +458,7 @@ const EgyptUnveiled = () => {
                 { label: "Where You Sleep", value: "4 nights Cairo, 2 Luxor, 2 Aswan" },
               ].map(({ label, value }) => (
                 <div key={label}>
-                  <p className="text-foreground/50 font-body text-[0.7rem] tracking-[0.2em] uppercase mb-3">
+                  <p className="text-foreground/65 font-body text-xs tracking-[0.2em] uppercase mb-3">
                     {label}
                   </p>
                   <div className="w-8 h-px bg-[#7b5e43] mx-auto mb-3" />
@@ -487,7 +487,7 @@ const EgyptUnveiled = () => {
                   <p className="font-heading text-3xl font-light text-[#7b5e43]/40 leading-none">
                     {n}
                   </p>
-                  <p className="font-body text-xs tracking-[0.18em] uppercase text-foreground/55">
+                  <p className="font-body text-xs tracking-[0.18em] uppercase text-foreground/65">
                     {date}
                   </p>
                   <div className="col-start-2 md:col-start-3">
@@ -504,7 +504,7 @@ const EgyptUnveiled = () => {
           </div>
 
           <ScrollReveal delay={0.2}>
-            <p className="font-body text-xs text-foreground/50 leading-relaxed mt-6">
+            <p className="font-body text-sm text-foreground/65 leading-relaxed mt-6">
               Day 9 has no hotel night. The group flies Aswan to Cairo and the tour ends at Cairo
               airport, so your flight home leaves Cairo that day. International flights are not
               included and the balloon on Day 6 is weather permitting.
@@ -546,7 +546,7 @@ const EgyptUnveiled = () => {
                       </span>
                     </div>
 
-                    {/* Title row — always visible */}
+                    {/* Title row, always visible */}
                     <div className="px-6 py-5 flex items-center justify-between">
                       <p className="font-heading text-xl text-foreground">{day.location}</p>
                       <motion.span
@@ -593,12 +593,12 @@ const EgyptUnveiled = () => {
         <div className="max-w-4xl mx-auto">
           <ScrollReveal>
             <div className="text-center mb-16">
-              <p className="text-foreground/50 font-body text-xs tracking-[0.35em] uppercase mb-5">The Route</p>
+              <p className="text-foreground/65 font-body text-xs tracking-[0.35em] uppercase mb-5">The Route</p>
               <h2 className="text-3xl md:text-5xl font-heading font-light text-foreground">
                 Your <span className="italic">Journey</span>
               </h2>
               <p className="text-foreground/70 font-body text-sm mt-4 max-w-lg mx-auto leading-relaxed">
-                From the ancient capital to the gates of Nubia — a journey south along the Nile.
+                From the ancient capital to the gates of Nubia, a journey south along the Nile.
               </p>
             </div>
           </ScrollReveal>
@@ -619,7 +619,7 @@ const EgyptUnveiled = () => {
                   </div>
                   <p className="font-heading text-2xl text-foreground mb-1">{city}</p>
                   <p className="font-body text-xs text-[#7b5e43] tracking-wide uppercase mb-1">{days}</p>
-                  <p className="font-body text-xs text-foreground/45 text-center">{sub}</p>
+                  <p className="font-body text-xs text-foreground/65 text-center">{sub}</p>
                 </div>
               ))}
             </div>
@@ -641,7 +641,7 @@ const EgyptUnveiled = () => {
                   <div className="pb-8">
                     <p className="font-heading text-2xl text-foreground">{city}</p>
                     <p className="font-body text-xs text-[#7b5e43] tracking-wide uppercase mt-1">{days}</p>
-                    <p className="font-body text-xs text-foreground/45 mt-0.5">{sub}</p>
+                    <p className="font-body text-xs text-foreground/65 mt-0.5">{sub}</p>
                   </div>
                 </div>
               ))}
@@ -650,12 +650,12 @@ const EgyptUnveiled = () => {
             {/* Flight indicators */}
             <div className="hidden md:flex justify-around mt-6">
               <div className="text-center">
-                <p className="font-body text-xs text-foreground/35 tracking-wide">✈ Morning flight</p>
-                <p className="font-body text-xs text-foreground/25">Cairo → Luxor, Day 5</p>
+                <p className="font-body text-xs text-foreground/65 tracking-wide">✈ Morning flight</p>
+                <p className="font-body text-xs text-foreground/65">Cairo → Luxor, Day 5</p>
               </div>
               <div className="text-center">
-                <p className="font-body text-xs text-foreground/35 tracking-wide">🚌 Scenic bus ride</p>
-                <p className="font-body text-xs text-foreground/25">Luxor → Aswan, Day 7</p>
+                <p className="font-body text-xs text-foreground/65 tracking-wide">🚌 Scenic bus ride</p>
+                <p className="font-body text-xs text-foreground/65">Luxor → Aswan, Day 7</p>
               </div>
             </div>
           </ScrollReveal>
@@ -686,7 +686,7 @@ const EgyptUnveiled = () => {
                 {journeyPlaying ? (
                   <iframe
                     src="/egypt-3d-journey.html"
-                    title="Egypt Unveiled — the nine-day route in 3D"
+                    title="Egypt Unveiled: the nine-day route in 3D"
                     className="absolute inset-0 w-full h-full border-0"
                     allow="autoplay; fullscreen"
                   />
@@ -716,7 +716,7 @@ const EgyptUnveiled = () => {
                 )}
               </div>
 
-              <p className="text-center font-body text-xs text-foreground/50 leading-relaxed mt-5">
+              <p className="text-center font-body text-sm text-foreground/65 leading-relaxed mt-5">
                 Runs on a loop. Nothing loads until you tap it, so the rest of this page stays quick.
               </p>
             </div>
@@ -729,7 +729,7 @@ const EgyptUnveiled = () => {
         <div className="max-w-4xl mx-auto">
           <ScrollReveal>
             <div className="text-center mb-14">
-              <p className="text-foreground/50 font-body text-xs tracking-[0.35em] uppercase mb-5">What to Expect</p>
+              <p className="text-foreground/65 font-body text-xs tracking-[0.35em] uppercase mb-5">What to Expect</p>
               <h2 className="text-3xl md:text-5xl font-heading font-light text-foreground">
                 Included &amp; <span className="italic">Not Included</span>
               </h2>
@@ -773,7 +773,7 @@ const EgyptUnveiled = () => {
         <div className="max-w-3xl mx-auto">
           <ScrollReveal>
             <div className="text-center mb-14">
-              <p className="text-foreground/50 font-body text-xs tracking-[0.35em] uppercase mb-5">
+              <p className="text-foreground/65 font-body text-xs tracking-[0.35em] uppercase mb-5">
                 Worth Knowing
               </p>
               <h2 className="text-3xl md:text-5xl font-heading font-light text-foreground">
@@ -787,7 +787,7 @@ const EgyptUnveiled = () => {
               {
                 topic: "If you travel alone",
                 usual: "Most small-group Egypt tours add a single supplement of 15% to 60% for a room of your own. One well-known operator charges 43%.",
-                ours: "Ours is 15.6% — $384. That is the hotel room at cost, with nothing added on top.",
+                ours: "Ours is 15.6%, or $384. That is the hotel room at cost, with nothing added on top.",
               },
               {
                 topic: "Who you share a room with",
@@ -816,7 +816,7 @@ const EgyptUnveiled = () => {
                     {topic}
                   </h3>
                   <div className="space-y-3">
-                    <p className="font-body text-sm text-foreground/45 leading-relaxed">
+                    <p className="font-body text-sm text-foreground/65 leading-relaxed">
                       {usual}
                     </p>
                     <p className="font-body text-sm text-foreground/80 leading-relaxed">
@@ -834,7 +834,7 @@ const EgyptUnveiled = () => {
       <section className="py-20 md:py-28 px-6" style={{ backgroundColor: "hsl(var(--cream))" }}>
         <div className="max-w-2xl mx-auto">
           <ScrollReveal>
-            <p className="text-foreground/50 font-body text-xs tracking-[0.35em] uppercase mb-5 text-center">
+            <p className="text-foreground/65 font-body text-xs tracking-[0.35em] uppercase mb-5 text-center">
               Looking After You
             </p>
             <h2 className="text-3xl md:text-4xl font-heading font-light text-foreground mb-10 text-center">
@@ -846,7 +846,7 @@ const EgyptUnveiled = () => {
                 You will have their name and mobile number two weeks before you fly.
               </p>
               <p>
-                They work to our written emergency procedures — the same document that
+                They work to our written emergency procedures, the same document that
                 identifies the nearest hospital to each of your hotels before you leave
                 home, and that your guide confirms in writing they have read.
               </p>
@@ -864,7 +864,7 @@ const EgyptUnveiled = () => {
       <section id="pricing" className="py-24 md:py-32 px-6 bg-background">
         <div className="max-w-xl mx-auto text-center">
           <ScrollReveal>
-            <p className="text-foreground/50 font-body text-xs tracking-[0.35em] uppercase mb-5">Investment</p>
+            <p className="text-foreground/65 font-body text-xs tracking-[0.35em] uppercase mb-5">Investment</p>
             <h2 className="text-3xl md:text-5xl font-heading font-light text-foreground mb-5">
               Tour <span className="italic">Pricing</span>
             </h2>
@@ -878,7 +878,7 @@ const EgyptUnveiled = () => {
               {/* Founding member banner */}
               <div className="bg-[#7b5e43] py-3 px-6">
                 <p className="text-white font-body text-xs tracking-[0.3em] uppercase">
-                  ★ Founding Member Rate — First Group Only ★
+                  ★ Founding Member Rate · First Group Only ★
                 </p>
               </div>
 
@@ -886,7 +886,7 @@ const EgyptUnveiled = () => {
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 sm:gap-8 mb-8 text-center">
                   {/* Sharing a twin */}
                   <div>
-                    <p className="text-foreground/50 font-body text-[0.7rem] tracking-[0.2em] uppercase mb-3">
+                    <p className="text-foreground/65 font-body text-xs tracking-[0.2em] uppercase mb-3">
                       Sharing a Twin
                     </p>
                     <p className="text-foreground/35 font-body text-xs line-through mb-1 tracking-wide">
@@ -896,14 +896,14 @@ const EgyptUnveiled = () => {
                       <span className="text-2xl align-top mt-1 inline-block">$</span>
                       <span className="text-6xl">2,360</span>
                     </p>
-                    <p className="font-body text-xs text-foreground/50 leading-relaxed">
+                    <p className="font-body text-sm text-foreground/65 leading-relaxed">
                       Per person, for two travellers<br />booking together
                     </p>
                   </div>
 
                   {/* Private room */}
                   <div className="sm:border-l sm:border-foreground/10 sm:pl-8">
-                    <p className="text-foreground/50 font-body text-[0.7rem] tracking-[0.2em] uppercase mb-3">
+                    <p className="text-foreground/65 font-body text-xs tracking-[0.2em] uppercase mb-3">
                       Private Room
                     </p>
                     <p className="text-foreground/35 font-body text-xs line-through mb-1 tracking-wide">
@@ -913,14 +913,14 @@ const EgyptUnveiled = () => {
                       <span className="text-2xl align-top mt-1 inline-block">$</span>
                       <span className="text-6xl">2,744</span>
                     </p>
-                    <p className="font-body text-xs text-foreground/50 leading-relaxed">
+                    <p className="font-body text-sm text-foreground/65 leading-relaxed">
                       Per person, a room of your<br />own for all 8 nights
                     </p>
                   </div>
                 </div>
 
                 <p className="text-[#7b5e43] font-body text-xs font-medium mb-8">
-                  Founding member rate — $100 off either room type
+                  Founding member rate: $100 off either room type
                 </p>
 
                 <div className="w-10 h-px bg-[#7b5e43] mx-auto mb-8" />
@@ -928,19 +928,19 @@ const EgyptUnveiled = () => {
                 <p className="text-foreground/70 font-body text-sm leading-relaxed mb-2">
                   Paid in three parts
                 </p>
-                <p className="text-foreground/55 font-body text-xs tracking-[0.05em] leading-relaxed mb-8">
+                <p className="text-foreground/65 font-body text-sm tracking-[0.05em] leading-relaxed mb-8">
                   $500 to reserve your place&nbsp;&nbsp;·&nbsp;&nbsp;$1,000 at 90 days&nbsp;&nbsp;·&nbsp;&nbsp;balance at 60 days
                 </p>
 
                 <p className="text-foreground/70 font-body text-sm leading-relaxed mb-6">
-                  Travelling alone? You book the private room — we never place you<br className="hidden sm:inline" />
+                  Travelling alone? You book the private room. We never place you<br className="hidden sm:inline" />
                   with a stranger. It is priced at what the extra room costs us, nothing on top.
                 </p>
                 <p className="text-foreground/70 font-body text-sm leading-relaxed mb-6">
                   Upon approval, we'll send you a secure payment link.<br />No payment required to apply.
                 </p>
                 <p className="text-[#7b5e43] font-body text-xs tracking-[0.15em] uppercase mb-10">
-                  ⚑ Limited to 15 guests — April 2027 departure
+                  ⚑ Limited to 15 guests · April 2027 departure
                 </p>
                 <a
                   href="#apply"
@@ -954,8 +954,8 @@ const EgyptUnveiled = () => {
 
           <ScrollReveal delay={0.18}>
             <div className="flex flex-wrap justify-center gap-6 mt-8">
-              {["Small Group — 6 to 15 Guests", "Licensed Egyptologist Guides", "48-Hour Response", "Secure WeTravel Checkout"].map((badge) => (
-                <div key={badge} className="flex items-center gap-2 font-body text-xs text-foreground/50 tracking-wide">
+              {["Small Group of 6 to 15 Guests", "Licensed Egyptologist Guides", "48-Hour Response", "Secure WeTravel Checkout"].map((badge) => (
+                <div key={badge} className="flex items-center gap-2 font-body text-xs text-foreground/65 tracking-wide">
                   <span className="text-[#7b5e43]">✓</span>
                   {badge}
                 </div>
@@ -964,7 +964,7 @@ const EgyptUnveiled = () => {
           </ScrollReveal>
 
           <ScrollReveal delay={0.2}>
-            <p className="mt-6 font-body text-sm text-foreground/45">
+            <p className="mt-6 font-body text-sm text-foreground/65">
               Are you a tour operator?{" "}
               <a
                 href="#apply"
@@ -984,7 +984,7 @@ const EgyptUnveiled = () => {
         <div className="max-w-4xl mx-auto">
           <ScrollReveal>
             <div className="text-center mb-16">
-              <p className="text-foreground/50 font-body text-xs tracking-[0.35em] uppercase mb-5">The Process</p>
+              <p className="text-foreground/65 font-body text-xs tracking-[0.35em] uppercase mb-5">The Process</p>
               <h2 className="text-3xl md:text-5xl font-heading font-light text-foreground">
                 How It <span className="italic">Works</span>
               </h2>
@@ -996,7 +996,7 @@ const EgyptUnveiled = () => {
               {
                 step: "01",
                 title: "Apply",
-                description: "Fill out our short application — takes less than 3 minutes. No payment required at this stage.",
+                description: "Fill out our short application. It takes less than 3 minutes. No payment required at this stage.",
               },
               {
                 step: "02",
@@ -1027,7 +1027,7 @@ const EgyptUnveiled = () => {
         <div className="max-w-4xl mx-auto">
           <ScrollReveal>
             <div className="text-center mb-14">
-              <p className="text-foreground/50 font-body text-xs tracking-[0.35em] uppercase mb-5">
+              <p className="text-foreground/65 font-body text-xs tracking-[0.35em] uppercase mb-5">
                 Travel Insurance
               </p>
               <h2 className="text-3xl md:text-5xl font-heading font-light text-foreground mb-5">
@@ -1091,7 +1091,7 @@ const EgyptUnveiled = () => {
           </ScrollReveal>
 
           <ScrollReveal delay={0.25}>
-            <p className="font-body text-xs text-foreground/50 leading-relaxed mt-6">
+            <p className="font-body text-sm text-foreground/65 leading-relaxed mt-6">
               Questions about coverage? Call USI Travel Insurance Services at{" "}
               <a
                 href="tel:+18558740156"
@@ -1113,7 +1113,7 @@ const EgyptUnveiled = () => {
         <div className="max-w-3xl mx-auto">
           <ScrollReveal>
             <div className="text-center mb-14">
-              <p className="text-foreground/50 font-body text-xs tracking-[0.35em] uppercase mb-5">Common Questions</p>
+              <p className="text-foreground/65 font-body text-xs tracking-[0.35em] uppercase mb-5">Common Questions</p>
               <h2 className="text-3xl md:text-5xl font-heading font-light text-foreground">
                 Frequently Asked <span className="italic">Questions</span>
               </h2>
@@ -1129,12 +1129,12 @@ const EgyptUnveiled = () => {
         <div className="max-w-6xl mx-auto">
           <ScrollReveal>
             <div className="text-center mb-14">
-              <p className="text-foreground/50 font-body text-xs tracking-[0.35em] uppercase mb-5">Real Moments</p>
+              <p className="text-foreground/65 font-body text-xs tracking-[0.35em] uppercase mb-5">Real Moments</p>
               <h2 className="text-3xl md:text-5xl font-heading font-light text-foreground">
                 Life on <span className="italic">the Tour</span>
               </h2>
               <p className="text-foreground/70 font-body text-sm mt-4 max-w-lg mx-auto leading-relaxed">
-                A glimpse into what awaits — real places, real experiences.
+                A glimpse into what awaits: real places, real experiences.
               </p>
             </div>
           </ScrollReveal>
@@ -1176,7 +1176,7 @@ const EgyptUnveiled = () => {
         <div className="max-w-5xl mx-auto">
           <ScrollReveal>
             <div className="text-center mb-16">
-              <p className="text-foreground/50 font-body text-xs tracking-[0.35em] uppercase mb-5">Guest Stories</p>
+              <p className="text-foreground/65 font-body text-xs tracking-[0.35em] uppercase mb-5">Guest Stories</p>
               <h2 className="text-3xl md:text-5xl font-heading font-light text-foreground">
                 What Our <span className="italic">Guests Say</span>
               </h2>
@@ -1191,7 +1191,7 @@ const EgyptUnveiled = () => {
                 location: "New York, USA",
               },
               {
-                quote: "I've traveled extensively but Egypt with this group was something entirely different. Every detail was handled — hotels, meals, guides — all exceptional. I didn't have to think once. Just experience.",
+                quote: "I've traveled extensively but Egypt with this group was something entirely different. Every detail was handled: hotels, meals, guides, all exceptional. I didn't have to think once. Just experience.",
                 name: "Sarah S.",
                 location: "London, UK",
               },
@@ -1207,7 +1207,7 @@ const EgyptUnveiled = () => {
                   <p className="font-body text-sm text-foreground/70 leading-relaxed flex-1 mb-8">{quote}</p>
                   <div className="border-t border-foreground/10 pt-5">
                     <p className="font-heading text-base text-foreground">{name}</p>
-                    <p className="font-body text-xs text-foreground/45 tracking-wide mt-1">{location}</p>
+                    <p className="font-body text-xs text-foreground/65 tracking-wide mt-1">{location}</p>
                   </div>
                 </div>
               </ScrollReveal>
@@ -1223,7 +1223,7 @@ const EgyptUnveiled = () => {
             <p className="font-heading text-2xl md:text-3xl font-light text-foreground mb-3">
               Know someone who'd love <span className="italic">Egypt?</span>
             </p>
-            <p className="font-body text-sm text-foreground/55 mb-8 leading-relaxed">
+            <p className="font-body text-sm text-foreground/65 mb-8 leading-relaxed">
               Share Egypt Unveiled with a friend who's been dreaming of this trip.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
@@ -1231,7 +1231,7 @@ const EgyptUnveiled = () => {
                 href="https://www.facebook.com/Thenextstamptravelco/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-6 py-3 border border-foreground/20 font-body text-xs tracking-[0.15em] uppercase text-foreground/60 hover:border-[#7b5e43] hover:text-[#7b5e43] transition-colors duration-300"
+                className="px-6 py-3 border border-foreground/20 font-body text-xs tracking-[0.15em] uppercase text-foreground/65 hover:border-[#7b5e43] hover:text-[#7b5e43] transition-colors duration-300"
               >
                 Facebook
               </a>
@@ -1239,7 +1239,7 @@ const EgyptUnveiled = () => {
                 href="https://www.instagram.com/thenextstamptravel/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-6 py-3 border border-foreground/20 font-body text-xs tracking-[0.15em] uppercase text-foreground/60 hover:border-[#7b5e43] hover:text-[#7b5e43] transition-colors duration-300"
+                className="px-6 py-3 border border-foreground/20 font-body text-xs tracking-[0.15em] uppercase text-foreground/65 hover:border-[#7b5e43] hover:text-[#7b5e43] transition-colors duration-300"
               >
                 Instagram
               </a>
@@ -1247,13 +1247,13 @@ const EgyptUnveiled = () => {
                 href="https://www.tiktok.com/@thenextstamp"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-6 py-3 border border-foreground/20 font-body text-xs tracking-[0.15em] uppercase text-foreground/60 hover:border-[#7b5e43] hover:text-[#7b5e43] transition-colors duration-300"
+                className="px-6 py-3 border border-foreground/20 font-body text-xs tracking-[0.15em] uppercase text-foreground/65 hover:border-[#7b5e43] hover:text-[#7b5e43] transition-colors duration-300"
               >
                 TikTok
               </a>
               <button
                 onClick={handleCopyLink}
-                className="px-6 py-3 border border-foreground/20 font-body text-xs tracking-[0.15em] uppercase text-foreground/60 hover:border-[#7b5e43] hover:text-[#7b5e43] transition-colors duration-300"
+                className="px-6 py-3 border border-foreground/20 font-body text-xs tracking-[0.15em] uppercase text-foreground/65 hover:border-[#7b5e43] hover:text-[#7b5e43] transition-colors duration-300"
               >
                 {copied ? "✓ Link Copied!" : "Copy Link"}
               </button>
@@ -1268,7 +1268,7 @@ const EgyptUnveiled = () => {
         <div className="max-w-4xl mx-auto">
           <ScrollReveal>
             <div className="text-center mb-16">
-              <p className="text-foreground/50 font-body text-xs tracking-[0.35em] uppercase mb-5">Who You'll Travel With</p>
+              <p className="text-foreground/65 font-body text-xs tracking-[0.35em] uppercase mb-5">Who You'll Travel With</p>
               <h2 className="text-3xl md:text-5xl font-heading font-light text-foreground">
                 Meet Your <span className="italic">Team</span>
               </h2>
@@ -1279,7 +1279,7 @@ const EgyptUnveiled = () => {
           </ScrollReveal>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-            {/* Person 1 — Tour Founder */}
+            {/* Person 1: Tour Founder */}
             <ScrollReveal delay={0.1}>
               <div className="flex flex-col">
                 <div className="aspect-[4/3] overflow-hidden mb-6">
@@ -1293,13 +1293,13 @@ const EgyptUnveiled = () => {
                   <p className="text-[#7b5e43] font-body text-xs tracking-[0.3em] uppercase mb-2">Founder & Host</p>
                   <h3 className="font-heading text-2xl text-foreground mb-4">Ryan Radwan</h3>
                   <p className="font-body text-sm text-foreground/75 leading-relaxed">
-                    Egypt has always been more than a destination to me — it's where history becomes tangible. I created The Next Stamp Tours because I believe travel should be transformative, not transactional. Every detail of this journey is something I've personally experienced, vetted, and designed so that you can show up and simply be present. My goal is simple: to give you the Egypt I fell in love with.
+                    Egypt has always been more than a destination to me. It's where history becomes tangible. I created The Next Stamp Tours because I believe travel should be transformative, not transactional. Every detail of this journey is something I've personally experienced, vetted, and designed so that you can show up and simply be present. My goal is simple: to give you the Egypt I fell in love with.
                   </p>
                 </div>
               </div>
             </ScrollReveal>
 
-            {/* Person 2 — Lead Tour Operator */}
+            {/* Person 2: Lead Tour Operator */}
             <ScrollReveal delay={0.2}>
               <div className="flex flex-col">
                 <div className="aspect-[4/3] overflow-hidden mb-6">
@@ -1313,7 +1313,7 @@ const EgyptUnveiled = () => {
                   <p className="text-[#7b5e43] font-body text-xs tracking-[0.3em] uppercase mb-2">Lead Tour Operator</p>
                   <h3 className="font-heading text-2xl text-foreground mb-4">Mohammed Mustafa</h3>
                   <p className="font-body text-sm text-foreground/75 leading-relaxed">
-                    Mohammed was born and raised in the shadow of the Pyramids, and that upbringing shaped everything about how he leads a tour. With years of on-the-ground experience guiding travelers through Egypt's most iconic and hidden sites, he brings a depth of knowledge that no guidebook can replicate. Fluent in English and Arabic, Mohammed has a gift for making history feel alive — whether he's walking you through the Valley of the Kings or navigating the winding streets of Islamic Cairo. With Mohammed leading the way, you're not just seeing Egypt. You're understanding it.
+                    Mohammed was born and raised in the shadow of the Pyramids, and that upbringing shaped everything about how he leads a tour. With years of on-the-ground experience guiding travelers through Egypt's most iconic and hidden sites, he brings a depth of knowledge that no guidebook can replicate. Fluent in English and Arabic, Mohammed has a gift for making history feel alive, whether he's walking you through the Valley of the Kings or navigating the winding streets of Islamic Cairo. With Mohammed leading the way, you're not just seeing Egypt. You're understanding it.
                   </p>
                 </div>
               </div>
@@ -1327,7 +1327,7 @@ const EgyptUnveiled = () => {
         <div className="max-w-2xl mx-auto">
           <ScrollReveal>
             <div className="text-center mb-12">
-              <p className="text-foreground/50 font-body text-xs tracking-[0.35em] uppercase mb-5">Reserve Your Spot</p>
+              <p className="text-foreground/65 font-body text-xs tracking-[0.35em] uppercase mb-5">Reserve Your Spot</p>
               <h2 className="text-3xl md:text-5xl font-heading font-light text-foreground mb-5">
                 Apply <span className="italic">Now</span>
               </h2>
@@ -1378,7 +1378,7 @@ const EgyptUnveiled = () => {
               {activeForm === "operator" && (
                 <div className="bg-[#7b5e43]/8 border border-[#7b5e43]/20 px-6 py-4 mb-0">
                   <p className="font-body text-sm text-foreground/70 leading-relaxed">
-                    <span className="text-[#7b5e43] font-medium">Have a different Egypt tour in mind?</span> No problem — even if your idea doesn't match our Egypt Unveiled itinerary exactly, apply anyway and tell us what you're thinking. We'll do our best to make it work.
+                    <span className="text-[#7b5e43] font-medium">Have a different Egypt tour in mind?</span> No problem. Even if your idea doesn't match our Egypt Unveiled itinerary exactly, apply anyway and tell us what you're thinking. We'll do our best to make it work.
                   </p>
                 </div>
               )}
@@ -1387,41 +1387,41 @@ const EgyptUnveiled = () => {
 
                 <div className="grid sm:grid-cols-2 gap-6">
                   <div>
-                    <label className="block font-body text-xs tracking-[0.15em] uppercase text-foreground/60 mb-2">Full Name</label>
+                    <label className="block font-body text-xs tracking-[0.15em] uppercase text-foreground/65 mb-2">Full Name</label>
                     <input
                       name="name"
                       type="text"
                       required
                       placeholder="Your full name"
-                      className="w-full border border-border bg-background px-4 py-3 font-body text-sm text-foreground placeholder:text-foreground/30 focus:outline-none focus:border-[#7b5e43] transition-colors"
+                      className="w-full border border-border bg-background px-4 py-3 font-body text-sm text-foreground placeholder:text-foreground/55 focus:outline-none focus:border-[#7b5e43] transition-colors"
                     />
                   </div>
                   <div>
-                    <label className="block font-body text-xs tracking-[0.15em] uppercase text-foreground/60 mb-2">Email Address</label>
+                    <label className="block font-body text-xs tracking-[0.15em] uppercase text-foreground/65 mb-2">Email Address</label>
                     <input
                       name="email"
                       type="email"
                       required
                       placeholder="your@email.com"
-                      className="w-full border border-border bg-background px-4 py-3 font-body text-sm text-foreground placeholder:text-foreground/30 focus:outline-none focus:border-[#7b5e43] transition-colors"
+                      className="w-full border border-border bg-background px-4 py-3 font-body text-sm text-foreground placeholder:text-foreground/55 focus:outline-none focus:border-[#7b5e43] transition-colors"
                     />
                   </div>
                 </div>
 
                 <div className="grid sm:grid-cols-2 gap-6">
                   <div>
-                    <label className="block font-body text-xs tracking-[0.15em] uppercase text-foreground/60 mb-2">Phone Number</label>
+                    <label className="block font-body text-xs tracking-[0.15em] uppercase text-foreground/65 mb-2">Phone Number</label>
                     <input
                       name="phone"
                       type="tel"
                       placeholder="+1 (000) 000-0000"
-                      className="w-full border border-border bg-background px-4 py-3 font-body text-sm text-foreground placeholder:text-foreground/30 focus:outline-none focus:border-[#7b5e43] transition-colors"
+                      className="w-full border border-border bg-background px-4 py-3 font-body text-sm text-foreground placeholder:text-foreground/55 focus:outline-none focus:border-[#7b5e43] transition-colors"
                     />
                   </div>
 
                   {activeForm === "tourist" ? (
                     <div>
-                      <label className="block font-body text-xs tracking-[0.15em] uppercase text-foreground/60 mb-2">Group Size</label>
+                      <label className="block font-body text-xs tracking-[0.15em] uppercase text-foreground/65 mb-2">Group Size</label>
                       <select
                         name="group_size"
                         required
@@ -1435,13 +1435,13 @@ const EgyptUnveiled = () => {
                     </div>
                   ) : (
                     <div>
-                      <label className="block font-body text-xs tracking-[0.15em] uppercase text-foreground/60 mb-2">Company Name</label>
+                      <label className="block font-body text-xs tracking-[0.15em] uppercase text-foreground/65 mb-2">Company Name</label>
                       <input
                         name="company"
                         type="text"
                         required
                         placeholder="Your company name"
-                        className="w-full border border-border bg-background px-4 py-3 font-body text-sm text-foreground placeholder:text-foreground/30 focus:outline-none focus:border-[#7b5e43] transition-colors"
+                        className="w-full border border-border bg-background px-4 py-3 font-body text-sm text-foreground placeholder:text-foreground/55 focus:outline-none focus:border-[#7b5e43] transition-colors"
                       />
                     </div>
                   )}
@@ -1449,7 +1449,7 @@ const EgyptUnveiled = () => {
 
                 {activeForm === "operator" && (
                   <div>
-                    <label className="block font-body text-xs tracking-[0.15em] uppercase text-foreground/60 mb-2">Number of Clients</label>
+                    <label className="block font-body text-xs tracking-[0.15em] uppercase text-foreground/65 mb-2">Number of Clients</label>
                     <select
                       name="number_of_clients"
                       required
@@ -1464,17 +1464,17 @@ const EgyptUnveiled = () => {
                 )}
 
                 <div>
-                  <label className="block font-body text-xs tracking-[0.15em] uppercase text-foreground/60 mb-2">Preferred Travel Dates</label>
+                  <label className="block font-body text-xs tracking-[0.15em] uppercase text-foreground/65 mb-2">Preferred Travel Dates</label>
                   <input
                     name="preferred_dates"
                     type="text"
                     placeholder="e.g. November 2026 or flexible"
-                    className="w-full border border-border bg-background px-4 py-3 font-body text-sm text-foreground placeholder:text-foreground/30 focus:outline-none focus:border-[#7b5e43] transition-colors"
+                    className="w-full border border-border bg-background px-4 py-3 font-body text-sm text-foreground placeholder:text-foreground/55 focus:outline-none focus:border-[#7b5e43] transition-colors"
                   />
                 </div>
 
                 <div>
-                  <label className="block font-body text-xs tracking-[0.15em] uppercase text-foreground/60 mb-2">
+                  <label className="block font-body text-xs tracking-[0.15em] uppercase text-foreground/65 mb-2">
                     {activeForm === "tourist" ? "Tell Us About Yourself" : "Tell Us About Your Clients"}
                   </label>
                   <textarea
@@ -1485,7 +1485,7 @@ const EgyptUnveiled = () => {
                         ? "Tell us a little about yourself and why you'd like to join Egypt Unveiled..."
                         : "Tell us about your clients, their travel interests, and what you're looking for from this partnership..."
                     }
-                    className="w-full border border-border bg-background px-4 py-3 font-body text-sm text-foreground placeholder:text-foreground/30 focus:outline-none focus:border-[#7b5e43] transition-colors resize-none"
+                    className="w-full border border-border bg-background px-4 py-3 font-body text-sm text-foreground placeholder:text-foreground/55 focus:outline-none focus:border-[#7b5e43] transition-colors resize-none"
                   />
                 </div>
 
@@ -1497,7 +1497,7 @@ const EgyptUnveiled = () => {
                   {submitting ? "Submitting..." : activeForm === "tourist" ? "Submit Application" : "Submit Operator Application"}
                 </button>
 
-                <p className="text-center font-body text-xs text-foreground/40 pt-2">
+                <p className="text-center font-body text-sm text-foreground/65 pt-2">
                   Questions? Email us at{" "}
                   <a href="mailto:info@thenextstamptravelco.com" className="text-[#7b5e43] hover:text-warm transition-colors">
                     info@thenextstamptravelco.com

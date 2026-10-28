@@ -80,10 +80,16 @@
   }
 
   /* Base type scale. Tailwind's sizes are rem-based, so raising this lifts
-     the whole page proportionally: text-sm 14px -> 15.75px, text-base
-     16px -> 18px, text-xs 12px -> 13.5px. */
+     type and layout together and every ratio on the page is preserved.
+     At 125% the root is 20px, which gives:
+       text-xs   12px -> 15px     (labels, captions)
+       text-sm   14px -> 17.5px   (the dominant body size on this page)
+       text-base 16px -> 20px
+       text-5xl  48px -> 60px     (hero)
+     Nothing on the page uses arbitrary px sizes, so none of it is left
+     behind at the old scale. */
   html {
-    font-size: 112.5%;
+    font-size: 125%;
   }
 
   body {

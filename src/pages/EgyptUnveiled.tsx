@@ -1046,7 +1046,7 @@ const EgyptUnveiled = () => {
             {[
               {
                 title: "For U.S. Residents",
-                text: "Comprehensive Tour Protection Plan underwritten by Starr. Includes trip cancellation and interruption up to 100% of trip cost, emergency medical, and medical evacuation, with an optional Cancel For Any Reason upgrade.",
+                text: "Tour Protection Plan underwritten by Starr. Includes trip cancellation and interruption up to 100% of trip cost, emergency medical, and medical evacuation, with an optional Cancel For Any Reason upgrade.",
                 href: "https://www.travelinsure.com/thenextstamp/",
                 label: "Get a travel insurance quote for U.S. residents (opens in new tab)",
               },
@@ -1083,9 +1083,10 @@ const EgyptUnveiled = () => {
           <ScrollReveal delay={0.2}>
             <div className="bg-[#7b5e43]/8 border border-[#7b5e43]/20 px-6 py-4 mt-8">
               <p className="font-body text-base text-foreground/70 leading-relaxed">
-                <span className="text-[#7b5e43] font-medium">Tip:</span> Buy within 14 days of
-                your first tour deposit to qualify for the pre-existing conditions waiver and the
-                optional Cancel For Any Reason upgrade.
+                <span className="text-[#7b5e43] font-medium">Tip:</span> Two things qualify you for
+                the pre-existing conditions waiver and the optional Cancel For Any Reason
+                upgrade: buy within 14 days of your first tour deposit, and insure 100% of your
+                prepaid, non-refundable trip cost. Fourteen days alone is not enough.
               </p>
             </div>
           </ScrollReveal>
